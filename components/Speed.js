@@ -22,7 +22,8 @@ export default function Speed() {
         </a>
       </Link>
       <h2 className=" mb-6 text-center text-gray-500">
-        Walmart descubrió que <b>mejorar el tiempo de carga </b> de la página en
+        Walmart descubrió que <b>mejorar el tiempo de carga </b> de la página
+        por
         <b> un segundo aumentó las conversiones en un 2%.</b>
       </h2>
       <h2 className=" mb-6 text-center text-gray-500">
@@ -33,7 +34,7 @@ export default function Speed() {
         Mobify descubrió que la
         <b>
           {" "}
-          reducción del tiempo de carga de su página de inicio en 0.1 segundos
+          reducción del tiempo de carga de su página de inicio por 0.1 segundos
         </b>{" "}
         resultó en un <b>aumento del 1,11 % en la conversión</b> basada en
         sesiones.
