@@ -55,11 +55,11 @@ export default function Services() {
         </h2>
         <p className="text-gray-500 text-center">
           Ofrecemos servicos que se adaptan a las necesidades de las diferentes
-          instituciones e industrias.{" "}
+          instituciones e industrias.
         </p>
         <div className="flex flex-col mt-10">
           {services.map((service) => {
-            return <ServiceCard key={service.key} service={service} />;
+            return <ServiceCard key={service.id} service={service} />;
           })}
         </div>
       </div>

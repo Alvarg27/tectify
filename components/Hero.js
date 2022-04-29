@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="w-full h-[600px] flex flex-col">
-      <div className="m-auto flex flex-col px-4">
+    <div className="w-full h-[600px] flex flex-col px-4">
+      <div className="m-auto flex flex-col">
         <h2 className="text-6xl font-bold m-auto text-center">
           Soluciones tecnológicas para el futuro
         </h2>
