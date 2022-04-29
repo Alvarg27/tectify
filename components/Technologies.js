@@ -1,7 +1,7 @@
 import React from "react";
 import TechnologyCard from "./TechnologyCard";
 
-export default function Advantages() {
+export default function technologies() {
   const technologies = [
     {
       id: 1,
@@ -54,14 +54,14 @@ export default function Advantages() {
     },
   ];
   return (
-    <div className="px-4 flex flex-col">
+    <div className="px-4 py-12 flex flex-col">
       <h2 className="text-5xl font-bold mb-6 text-center">
         Somos los mejores en lo que hacemos.
       </h2>
 
-      <h2 className="text-3xl font-bold mb-6 text-center text-gray-500">
-        Dile adios a wordpress y reinventa tu empresa con las tecnologías más
-        modernas desarrolladas a tu medida.
+      <h2 className="text-3xl mb-6 text-center text-gray-500">
+        Dile adios a <b>wordpress y reinventa tu empresa</b> con las tecnologías
+        más modernas desarrolladas a tu medida.
       </h2>
       <div className="flex overflow-x-auto my-auto">
         {technologies.map((technology) => (

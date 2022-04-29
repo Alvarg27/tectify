@@ -1,9 +1,10 @@
 import Head from "next/head";
-import Advantages from "../components/Advantages";
+import Technologies from "../components/Technologies";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import TextSection from "../components/TextSection";
+import Speed from "../components/Speed";
 
 export default function Home({ offsetY }) {
   return (
@@ -11,7 +12,8 @@ export default function Home({ offsetY }) {
       <Hero />
       <TextSection offsetY={offsetY} />
       <Services offsetY={offsetY} />
-      <Advantages />
+      <Technologies />
+      <Speed />
     </div>
   );
 }
