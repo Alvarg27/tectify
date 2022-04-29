@@ -48,11 +48,20 @@ export default function Services() {
     },
   ];
   return (
-    <div className="bg-blue-200">
-      <div className="flex flex-col">
-        {services.map((service) => {
-          return <ServiceCard key={service.key} service={service} />;
-        })}
+    <div className="white">
+      <div className="mt-20 px-4">
+        <h2 className="text-6xl font-bold mb-6 text-center">
+          Conoce nuestros servicios...
+        </h2>
+        <p className="text-gray-500 text-center">
+          Ofrecemos servicos que se adaptan a las necesidades de las diferentes
+          instituciones e industrias.{" "}
+        </p>
+        <div className="flex flex-col mt-10">
+          {services.map((service) => {
+            return <ServiceCard key={service.key} service={service} />;
+          })}
+        </div>
       </div>
     </div>
   );
