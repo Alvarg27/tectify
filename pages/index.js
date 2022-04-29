@@ -7,7 +7,6 @@ import TextSection from "../components/TextSection";
 export default function Home({ offsetY }) {
   return (
     <div>
-      <Header />
       <Hero />
       <TextSection offsetY={offsetY} />
       <Services offsetY={offsetY} />

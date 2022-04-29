@@ -56,7 +56,7 @@ export default function Services({ offsetY }) {
     },
   ];
   return (
-    <div className="bg-blue-700">
+    <div className="bg-blue-700 ">
       <div
         className="bg-white px-4 py-20 rounded-t-3xl transition duration-300"
         style={{
