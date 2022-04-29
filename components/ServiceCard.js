@@ -33,7 +33,7 @@ export default function ServiceCard({ service }) {
   };
   return (
     <div>
-      <div className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4 h-[140px] flex flex-col">
+      <div className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4 h-[180px] flex flex-col">
         <div className="my-auto">
           <div className="flex justify-between my-auto">
             <h3 className="font-bold">{service.title}</h3>
@@ -41,7 +41,7 @@ export default function ServiceCard({ service }) {
           </div>
           <div className="my-auto">
             <p className="mr-8">{service.description}</p>
-            <p className="text-blue-700 mt-1">Ver más</p>
+            <p className="text-blue-700 mt-1 font-bold">Ver más</p>
           </div>
         </div>
       </div>
