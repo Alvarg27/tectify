@@ -43,7 +43,8 @@ export default function Services() {
     {
       id: 8,
       title: "Data science",
-      description: "Desarrolo de pagina estática informativa de alta velocidad",
+      description:
+        "Diseño de estructuras de datos y análisis estadistico de información.",
     },
   ];
   return (
