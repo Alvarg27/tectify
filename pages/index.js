@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import TextSection from "../components/TextSection";
 import Speed from "../components/Speed";
 import MobileFirst from "../components/MobileFirst";
+import Security from "../components/Security";
 
 export default function Home({ offsetY }) {
   return (
@@ -16,6 +17,7 @@ export default function Home({ offsetY }) {
       <Technologies />
       <Speed />
       <MobileFirst />
+      <Security />
     </div>
   );
 }

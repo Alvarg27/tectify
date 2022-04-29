@@ -5,9 +5,9 @@ export default function Footer() {
   const date = new Date();
   let year = date.getFullYear();
   return (
-    <div className="w-full bg-blue-700  flex flex-col">
+    <div className="w-full bg-blue-700  flex flex-col rounded-t-3xl ">
       <h2 className="text-white font-bold text-4xl mx-auto my-4">tectify</h2>
-      <div className="text-white text-4xl flex mx-auto">
+      <div className="text-white text-2xl flex mx-auto">
         <FaInstagram className="m-auto mx-4  my-4" />
         <FaEnvelope className="m-auto mx-4 my-4" />
         <FaWhatsapp className="m-auto mx-4 my-4" />
