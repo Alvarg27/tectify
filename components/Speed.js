@@ -17,7 +17,7 @@ export default function Speed() {
       <Link href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwhimsical-mermaid-ea9d22.netlify.app%2F&form_factor=desktop">
         <a target="_blank" className="mx-auto">
           <button className="bg-blue-700 h-12 rounded-md my-10 mx-auto px-8 text-white transition duration-300 hover:bg-blue-900">
-            probar esta página
+            Probar esta página
           </button>
         </a>
       </Link>

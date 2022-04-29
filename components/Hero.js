@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="w-full h-screen flex flex-col overflow-hidden">
       <div className="m-auto flex flex-col">
-        <h2 className="bg-clip-text text-transparent text-6xl font-bold m-auto text-center bg-gradient-to-tl from-[#a6c0fe] to-[#f68084]">
+        <h2 className="bg-clip-text text-transparent text-6xl font-bold m-auto text-center  bg-gradient-to-tl from-[#a6c0fe] to-[#f68084]">
           Soluciones tecnológicas para el futuro
         </h2>
         <p className="text-center mt-10 text-gray-500 px-8">

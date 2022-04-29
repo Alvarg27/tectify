@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import TextSection from "../components/TextSection";
 import Speed from "../components/Speed";
+import MobileFirst from "../components/MobileFirst";
 
 export default function Home({ offsetY }) {
   return (
@@ -14,6 +15,7 @@ export default function Home({ offsetY }) {
       <Services offsetY={offsetY} />
       <Technologies />
       <Speed />
+      <MobileFirst />
     </div>
   );
 }
