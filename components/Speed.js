@@ -8,7 +8,10 @@ export default function Speed() {
     <div className="px-4 py-12 flex flex-col">
       <FaBolt className="text-yellow-400 m-auto text-5xl font-bold" />
       <h2 className="text-5xl font-bold mb-6 text-center ">
-        sitios web ultrarrápidos
+        Sitios web ultrarrápidos
+      </h2>
+      <h2 className="text-3xl mb-6 text-center text-gray-500">
+        Vuelve tu página hasta <b>400% más rápida.</b>
       </h2>
       <SpeedElement />
       <Link href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwhimsical-mermaid-ea9d22.netlify.app%2F&form_factor=desktop">
@@ -20,11 +23,11 @@ export default function Speed() {
       </Link>
       <h2 className=" mb-6 text-center text-gray-500">
         Walmart descubrió que <b>mejorar el tiempo de carga </b> de la página en
-        <b> un segundo aumentó las conversiones en un 2%</b>
+        <b> un segundo aumentó las conversiones en un 2%.</b>
       </h2>
       <h2 className=" mb-6 text-center text-gray-500">
         AutoAnything experimentó un <b>aumento del 12-13 % en las ventas </b>
-        después de <b>reducir a la mitad el tiempo de carga</b> de la página
+        después de <b>reducir a la mitad el tiempo de carga</b> de la página.
       </h2>
       <h2 className=" mb-6 text-center text-gray-500">
         Mobify descubrió que la
@@ -33,7 +36,7 @@ export default function Speed() {
           reducción del tiempo de carga de su página de inicio en 0.1 segundos
         </b>{" "}
         resultó en un <b>aumento del 1,11 % en la conversión</b> basada en
-        sesiones
+        sesiones.
       </h2>
     </div>
   );
