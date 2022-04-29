@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 
-export default function Services() {
+export default function Services({ offsetY }) {
   const services = [
     {
       id: 1,
@@ -57,7 +57,12 @@ export default function Services() {
   ];
   return (
     <div className="bg-blue-700">
-      <div className="bg-white px-4 py-20 rounded-t-3xl ">
+      <div
+        className="bg-white px-4 py-20 rounded-t-3xl transition duration-300"
+        style={{
+          transform: `translateY(${offsetY < 600 ? 100 : 0}%)`,
+        }}
+      >
         <h2 className="text-5xl font-bold mb-6 text-center">
           Conoce nuestros servicios...
         </h2>
