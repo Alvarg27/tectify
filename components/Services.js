@@ -57,12 +57,7 @@ export default function Services({ offsetY }) {
   ];
   return (
     <div className="bg-blue-700 ">
-      <div
-        className="bg-white px-4 py-20 rounded-t-3xl transition duration-300"
-        style={{
-          transform: `translateY(${offsetY < 600 ? 100 : 0}%)`,
-        }}
-      >
+      <div className="bg-white px-4 py-20 rounded-t-3xl transition">
         <h2 className="text-5xl font-bold mb-6 text-center">
           Conoce nuestros servicios...
         </h2>
