@@ -58,7 +58,7 @@ export default function Services({ offsetY }) {
   ];
   return (
     <div className="bg-blue-700 ">
-      <div className="bg-white px-4 py-20 rounded-t-3xl transition">
+      <div className="bg-white px-4 py-20 rounded-t-3xl">
         <h2 className="text-5xl font-bold mb-6 text-center">
           Conoce nuestros servicios...
         </h2>
@@ -66,7 +66,7 @@ export default function Services({ offsetY }) {
           Ofrecemos servicos que se adaptan a las necesidades de las diferentes
           instituciones e industrias.
         </p>
-        <div className="flex flex-col mt-10">
+        <div className="flex  mt-10 flex-wrap w-full">
           {services.map((service) => {
             return <ServiceCard key={service.id} service={service} />;
           })}

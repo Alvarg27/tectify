@@ -59,10 +59,17 @@ export default function technologies() {
       description: "Despliega tu front-end con la tecnología más rápida.",
       website: "https://www.netlify.com/",
     },
+    {
+      id: 8,
+      title: "Twilio",
+      image: "/twilio-logo.webp",
+      description: "Automatiza tu comunicación.",
+      website: "https://www.netlify.com/",
+    },
   ];
   return (
     <div className="px-4 py-12 flex flex-col">
-      <h2 className="text-5xl font-bold mb-6 text-center">
+      <h2 className="text-5xl font-bold mb-6 text-center lg: px-10">
         Somos los mejores en lo que hacemos.
       </h2>
 
@@ -70,7 +77,7 @@ export default function technologies() {
         Dile adiós a Wordpress y <b>reinventa tu empresa</b> con las tecnologías
         más modernas desarrolladas a tu medida.
       </h2>
-      <div className="flex overflow-x-auto my-auto no-scrollbar">
+      <div className="flex overflow-x-auto my-auto no-scrollbar lg:mx-auto  ">
         {technologies.map((technology) => (
           <TechnologyCard key={technology.id} technology={technology} />
         ))}

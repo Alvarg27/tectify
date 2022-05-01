@@ -8,10 +8,10 @@ export default function MobileFirst({}) {
   return (
     <div className="flex flex-col py-20">
       <FaUser className="text-red-400 m-auto text-5xl font-bold" />
-      <h2 className="text-5xl font-bold mb-6 text-center ">
+      <h2 className="text-5xl font-bold mb-6 text-center lg: px-10">
         Prioridad al usuario móvil
       </h2>
-      <h2 className="text-3xl mb-6 text-center px-4 text-gray-500">
+      <h2 className="text-3xl mb-6 text-center px-4 text-gray-500 lg:px-10">
         Desarrollamos sitios web que <b>adaptan</b> la experiencia de usuario a
         los <b>distintos tamaños de pantalla</b> que existen.
       </h2>

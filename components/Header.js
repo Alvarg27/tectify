@@ -5,7 +5,7 @@ import { CgMenuGridO } from "react-icons/cg";
 export default function Header() {
   const router = useRouter();
   return (
-    <div className="bg-white h-[90px] flex justify-between px-4 drop-shadow-md sticky top-0 z-50">
+    <div className="bg-white h-[90px] flex justify-between px-4 drop-shadow-md sticky top-0 z-50 lg:px-10">
       <p
         onClick={() => router.push("/")}
         className="text-blue-700 text-4xl font-bold mx-0 my-auto cursor-pointer"

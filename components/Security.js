@@ -5,17 +5,19 @@ export default function Security() {
   return (
     <div className="px-4 py-12 flex flex-col">
       <FaLock className="text-blue-700 m-auto text-5xl font-bold" />
-      <h2 className="text-5xl font-bold mb-6 text-center ">
+      <h2 className="text-5xl font-bold mb-6 text-center lg:px-10">
         Más seguridad que nunca
       </h2>
-      <h2 className="text-3xl mb-6 text-center text-gray-500">
-        Diseñamos protocolos de seguridad robustos para{" "}
-        <b>proteger tu información</b> y la de tus usuarios,{" "}
-        <b>antes de que sea demasiado tarde.</b>
+      <h2 className="text-3xl mb-6 text-center text-gray-500 lg:px-10">
+        <b>
+          Diseñamos protocolos de seguridad robustos para proteger tu
+          información y la de tus usuarios
+        </b>
+        , antes de que sea demasiado tarde.
       </h2>
 
-      <h2 className=" mb-6 text-center text-gray-500">
-        <b>Cada día son hackeados</b> al rededor de <b>30,000 sitios</b> web.
+      <h2 className=" mb-6 text-center text-gray-500 ">
+        <b>Cada día son hackeados</b> alrededor de <b>30,000 sitios</b> web.
       </h2>
       <h2 className=" mb-6 text-center text-gray-500">
         <b>La ciberdelincuencia costará</b> al mundo{" "}

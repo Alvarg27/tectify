@@ -7,10 +7,10 @@ export default function Speed() {
   return (
     <div className="px-4 py-12 flex flex-col">
       <FaBolt className="text-yellow-400 m-auto text-5xl font-bold" />
-      <h2 className="text-5xl font-bold mb-6 text-center ">
+      <h2 className="text-5xl font-bold mb-6 text-center lg: px-10 ">
         Sitios web ultrarrápidos
       </h2>
-      <h2 className="text-3xl mb-6 text-center text-gray-500">
+      <h2 className="text-3xl mb-6 text-center text-gray-500 lg: px-10">
         Vuelve tu página hasta <b>400% más rápida.</b>
       </h2>
       <SpeedElement />
