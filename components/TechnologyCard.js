@@ -12,6 +12,7 @@ export default function TechnologyCard({ technology }) {
               className="w-[60px] m-auto"
               width="60px"
               height="100%"
+              alt={technology.title + ", " + technology.description}
             />
           </div>
         </div>
