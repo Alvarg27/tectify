@@ -2,8 +2,9 @@ import React from "react";
 import Iphone from "./Iphone";
 import { FaUser } from "react-icons/fa";
 import Link from "next/link";
+import { useState } from "react";
 
-export default function MobileFirst() {
+export default function MobileFirst({}) {
   return (
     <div className="flex flex-col py-20">
       <FaUser className="text-red-400 m-auto text-5xl font-bold" />
@@ -12,7 +13,7 @@ export default function MobileFirst() {
       </h2>
       <h2 className="text-3xl mb-6 text-center px-4 text-gray-500">
         Desarrollamos sitios web que <b>adaptan</b> la experiencia de usuario a
-        los <b>diferentes tamaños de pantallas</b> que existen.
+        los <b>distintos tamaños de pantalla</b> que existen.
       </h2>
       <Iphone>
         <div className="m-auto flex flex-col">

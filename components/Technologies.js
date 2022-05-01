@@ -52,6 +52,13 @@ export default function technologies() {
       description: "Despliega tus aplicaciones de forma eficaz.",
       website: "https://www.digitalocean.com/",
     },
+    {
+      id: 7,
+      title: "Netlify",
+      image: "/netlify-logo.webp",
+      description: "Despliega tu front-end con la tecnología más rápida.",
+      website: "https://www.netlify.com/",
+    },
   ];
   return (
     <div className="px-4 py-12 flex flex-col">
@@ -60,10 +67,10 @@ export default function technologies() {
       </h2>
 
       <h2 className="text-3xl mb-6 text-center text-gray-500">
-        Dile adios a <b>wordpress y reinventa tu empresa</b> con las tecnologías
+        Dile adiós a Wordpress y <b>reinventa tu empresa</b> con las tecnologías
         más modernas desarrolladas a tu medida.
       </h2>
-      <div className="flex overflow-x-auto my-auto">
+      <div className="flex overflow-x-auto my-auto no-scrollbar">
         {technologies.map((technology) => (
           <TechnologyCard key={technology.id} technology={technology} />
         ))}

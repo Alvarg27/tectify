@@ -8,6 +8,7 @@ export default function Services({ offsetY }) {
       title: "Landing page",
       description: "Página estática informativa, de alta velocidad.",
       icon: "FaColumns",
+      link: "/landing-page",
     },
     {
       id: 2,

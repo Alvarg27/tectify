@@ -16,7 +16,7 @@ export default function Home({ offsetY }) {
       <Services offsetY={offsetY} />
       <Technologies />
       <Speed />
-      <MobileFirst />
+      <MobileFirst offsetY={offsetY} />
       <Security />
     </div>
   );

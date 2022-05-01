@@ -18,8 +18,8 @@ export default function Security() {
         <b>Cada día son hackeados</b> al rededor de <b>30,000 sitios</b> web.
       </h2>
       <h2 className=" mb-6 text-center text-gray-500">
-        <b>Los costos de robo de datos</b> globales fueron de{" "}
-        <b>4,24 millones de dolares</b> en 2021.
+        <b>La ciberdelincuencia costará</b> al mundo{" "}
+        <b>$10,5 trillones de dolares</b> anuales para 2025.
       </h2>
       <h2 className=" mb-6 text-center text-gray-500">
         <b>WordPress representó</b> alrededor del{" "}

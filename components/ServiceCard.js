@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React from "react";
 import {
   FaUtensils,
@@ -12,6 +13,7 @@ import {
 } from "react-icons/fa";
 
 export default function ServiceCard({ service }) {
+  const router = useRouter();
   const renderIcon = () => {
     if (service.icon === "FaShoppingCart") {
       return <FaShoppingCart className="my-auto xm-0 text-red-400 text-2xl" />;
@@ -41,7 +43,12 @@ export default function ServiceCard({ service }) {
           </div>
           <div className="my-auto">
             <p className="mr-8">{service.description}</p>
-            <p className="text-blue-700 mt-1 font-bold">Ver más</p>
+            <p
+              onClick={() => router.push(service.link)}
+              className="text-blue-700 mt-1 font-bold cursor-pointer"
+            >
+              Ver más
+            </p>
           </div>
         </div>
       </div>
