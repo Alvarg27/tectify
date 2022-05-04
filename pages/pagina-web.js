@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import FaqCard from "../components/FaqCard";
 import Iphone from "../components/Iphone";
 import PriceCard from "../components/PriceCard";
+import Image from "next/image";
 
 const litePlan = {
   title: "Lite",
@@ -62,7 +64,14 @@ export default function website() {
       </div>
 
       <Iphone>
-        <img src="/grupo-farma.webp" className="w-[120%] mt- object-cover" />
+        <Image
+          layout="fill"
+          src="/grupo-farma.webp"
+          alt="pagina-web"
+          placeholder="blur"
+          blurDataURL="/grupo-farma-blur.webp"
+          className="w-[120%] mt- object-cover"
+        />
       </Iphone>
       <div className="flex flex-col mb-6 px-6">
         <div className="mx-auto my-6 ">
@@ -106,6 +115,7 @@ export default function website() {
           features={["Hosting en netlify", "Diseño de UX", "Página de inicio"]}
         />
       </div>
+      <FaqCard />
     </div>
   );
 }
