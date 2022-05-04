@@ -21,7 +21,7 @@ export default function PriceCard({ plan }) {
           ))}
         </ul>
         <button className="bg-white h-12 rounded-md my-10 mx-auto w-[100%] text-blue-700 transition duration-300 hover:bg-gray-200">
-          Contactar
+          Contratar
         </button>
       </div>
     </div>

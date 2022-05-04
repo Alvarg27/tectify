@@ -157,7 +157,7 @@ export default function website() {
       <h2 className="text-5xl font-bold mb-6 text-center lg: px-10  ">
         Precios
       </h2>
-      <div className="flex mx-auto w-[90%]  overflow-hidden rounded-lg bg-gray-100 cursor-pointer h-10 relative">
+      <div className="flex mx-auto w-[90%]  overflow-hidden rounded-lg bg-gray-100 cursor-pointer h-[50px] relative">
         <div
           onClick={() => setDynamic(false)}
           className="w-1/2 flex relative z-10"
