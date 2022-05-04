@@ -4,13 +4,6 @@ import ServiceCard from "./ServiceCard";
 export default function Services({ offsetY }) {
   const services = [
     {
-      id: 1,
-      title: "Landing page",
-      description: "Página estática informativa, de alta velocidad.",
-      icon: "FaColumns",
-      link: "/landing-page",
-    },
-    {
       id: 2,
       title: "Pagina Web",
       description: "Sitio web profesional para todo tipo de industrias.",
@@ -37,13 +30,13 @@ export default function Services({ offsetY }) {
     },
     {
       id: 6,
-      title: "Aplicaciones mobiles",
+      title: "Aplicaciones móviles",
       description: "Aplicaciones mobiles especializadas a tus necesidades.",
       icon: "FaMobileAlt",
     },
     {
       id: 7,
-      title: "Desarrolo de backend",
+      title: "Aplicaciones web",
       description:
         "Backend y servidores avanzados para resolver todo tipo de necesidades.",
       icon: "FaServer",
