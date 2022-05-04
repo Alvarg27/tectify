@@ -51,26 +51,49 @@ export default function website() {
         <h1 className="bg-clip-text text-transparent text-6xl font-bold m-auto text-center py-2  bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] lg:text-8xl">
           Página web
         </h1>
-        <h2 className="text-2xl mb-6 text-center text-gray-500 lg: px-10">
-          Una landing page, o página de aterrizaje, es una página web diseñada
-          específicamente para convertir visitantes en leads.
+        <h2 className="text-2xl text-center text-gray-500 lg: px-10">
+          Lleva tu empresa al siguiente nivel con una página web moderna, rápida
+          y eficaz.
         </h2>
+        <p className="text-center text-gray-400">
+          En 2010, había más de 2 mil millones de usuarios de Internet en todo
+          el mundo. En 2021, había más de 4.6 mil millones.
+        </p>
       </div>
 
       <Iphone>
         <img src="/grupo-farma.webp" className="w-[120%] mt- object-cover" />
       </Iphone>
-
-      <h2 className=" mb-6 text-center text-gray-500 ">
-        <b>Cada día son hackeados</b> alrededor de <b>30,000 sitios</b> web.
-      </h2>
-      <h2 className=" mb-6 text-center text-gray-500">
-        <b>La ciberdelincuencia costará</b> al mundo{" "}
-        <b>$10,5 trillones de dolares</b> anuales para 2025.
-      </h2>
-      <h2 className=" mb-6 text-center text-gray-500">
-        <b>WordPress representó</b> alrededor del{" "}
-        <b>90% de los sitios web hackeados</b> en 2018.
+      <div className="flex flex-col mb-6 px-6">
+        <div className="mx-auto my-6 ">
+          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
+            75%
+          </h2>
+          <p className="text-center ">
+            de los usuarios admite emitir juicios sobre la credibilidad de una
+            empresa en función del diseño de su sitio web.
+          </p>
+        </div>
+        <div className="mx-auto  my-6 ">
+          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
+            85%
+          </h2>
+          <p className="text-center ">
+            de los clientes B2B buscan en la web antes de tomar una decisión de
+            compra
+          </p>
+        </div>
+        <div className="mx-auto my-6 ">
+          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
+            0.05s
+          </h2>
+          <p className="text-center ">
+            tardan los usuarios en formar una opinión sobre su sitio web.
+          </p>
+        </div>
+      </div>
+      <h2 className="text-5xl font-bold mb-6 text-center lg: px-10 ">
+        Precios
       </h2>
       <div className="flex flex-wrap ">
         <PriceCard plan={litePlan} />
