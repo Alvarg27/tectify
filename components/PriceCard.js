@@ -14,7 +14,7 @@ export default function PriceCard({ plan }) {
         <p className="my-6">{plan.description}</p>
         <ul>
           {plan.features.map((item) => (
-            <li className="flex my-2">
+            <li key={item} className="flex my-2">
               <FaCheck className="mx-0 my-auto" />
               <p className="mx-2 my-auto">{item}</p>
             </li>
