@@ -98,7 +98,7 @@ const proMaxPlanD = {
   color: "bg-blue-700",
 };
 
-export default function website() {
+export default function Website() {
   const [dynamic, setDynamic] = useState(false);
   return (
     <div className="py-20 relative z-20 flex flex-col">
