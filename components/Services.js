@@ -8,6 +8,7 @@ export default function Services({ offsetY }) {
       title: "Pagina Web",
       description: "Sitio web profesional para todo tipo de industrias.",
       icon: "FaLayerGroup",
+      link: "/pagina-web",
     },
     {
       id: 3,
@@ -50,7 +51,7 @@ export default function Services({ offsetY }) {
     },
   ];
   return (
-    <div className="bg-blue-700 ">
+    <div className="bg-blue-700 relative z-10">
       <div className="bg-white px-4 py-20 rounded-t-3xl">
         <h2 className="text-5xl font-bold mb-6 text-center">
           Conoce nuestros servicios...
