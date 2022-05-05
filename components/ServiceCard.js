@@ -35,7 +35,7 @@ export default function ServiceCard({ service }) {
   };
   return (
     <div className="w-full lg:w-[25%]">
-      <div className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4 h-[180px] flex flex-col ">
+      <div className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4 h-[180px] flex flex-col onClick={() => router.push(service.link)}">
         <div className="my-auto">
           <div className="flex justify-between my-auto">
             <h3 className="font-bold">{service.title}</h3>
@@ -43,10 +43,7 @@ export default function ServiceCard({ service }) {
           </div>
           <div className="my-auto">
             <p className="mr-8">{service.description}</p>
-            <p
-              onClick={() => router.push(service.link)}
-              className="text-blue-700 mt-1 font-bold cursor-pointer"
-            >
+            <p className="text-blue-700 mt-1 font-bold cursor-pointer">
               Ver más
             </p>
           </div>
