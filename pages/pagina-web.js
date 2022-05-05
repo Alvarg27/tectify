@@ -212,7 +212,10 @@ export default function Website() {
         question="¿De qué manera están construidad las páginas web?"
         answer="Nuestras páginas web están programadas desde cero en React, Tailwind y Next js. A diferencia de otros que utilizan creadores de páginas, limitando las posibilidades del clientes. "
       />
-
+      <FaqCard
+        question="¿Las páginas web estan diseñadas para teléfono?"
+        answer="En tectify nos aseguramos de que todas nuestras páginas web se adapten a todos los tamaños de pantalla, ya sea telefono, tableta o computadora. Garantizando así la mejor experiencia de usuario."
+      />
       <FaqCard
         question="¿Qué es una página web estática?"
         answer="Es una página dónde el contenido es añadido directamente en el código y no puede ser manipulado a través de un panel administrativo. Es útil para empresas que no suelen cambiar su contenido constantemente"
