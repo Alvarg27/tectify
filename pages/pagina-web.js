@@ -42,7 +42,7 @@ const proMaxPlan = {
     "Página de contacto",
     "Página de about",
     "Página de servicios",
-    "Página informativa",
+    "Página personalizada",
   ],
   color: "bg-blue-700",
 };
@@ -50,7 +50,7 @@ const proMaxPlan = {
 const litePlanD = {
   title: "Lite Dinámico",
   description:
-    "Para empresas que bucan hacer su lanzamiento web y requieren cambion constantes en su contenido.",
+    "Para empresas que bucan hacer su lanzamiento web y requieren cambios constantes en su contenido.",
   price: "$13,000",
   frequency: "Pago único",
   features: [
@@ -65,7 +65,7 @@ const litePlanD = {
 const proPlanD = {
   title: "Pro Dinámica",
   description:
-    "Para empresas establesidas que buscan un sitio web completo y requieren cambion constantes en su contenido.",
+    "Para empresas establesidas que buscan un sitio web completo y requieren cambios constantes en su contenido.",
   price: "$16,000",
   frequency: "Pago único",
   features: [
@@ -82,7 +82,7 @@ const proPlanD = {
 const proMaxPlanD = {
   title: "Pro Max Dinámica",
   description:
-    "Para empresas establesidas que buscan un sitio web extenso y requieren cambion constantes en su contenido.",
+    "Para empresas establesidas que buscan un sitio web extenso y requieren cambios constantes en su contenido.",
   price: "$20,000",
   frequency: "Pago único",
   features: [
@@ -93,7 +93,7 @@ const proMaxPlanD = {
     "Página de contacto",
     "Página de about",
     "Página de servicios",
-    "Página informativa",
+    "Página personalizada",
   ],
   color: "bg-blue-700",
 };
@@ -103,14 +103,14 @@ export default function Website() {
   return (
     <div className="py-20 relative z-20 flex flex-col">
       <div className="m-auto flex flex-col">
-        <h1 className="bg-clip-text text-transparent text-6xl font-bold m-auto text-center py-2  bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] lg:text-8xl">
+        <h1 className="bg-clip-text text-transparent text-6xl font-bold mx-auto mb-4 text-center py-2  bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] lg:text-8xl">
           Página web
         </h1>
-        <h2 className="text-2xl text-center text-gray-500 lg: px-10">
+        <h2 className="text-2xl text-center text-gray-500 mb-4 px-6">
           Lleva tu empresa al siguiente nivel con una página web moderna, rápida
           y eficaz.
         </h2>
-        <p className="text-center text-gray-400">
+        <p className="text-center text-gray-400 px-6">
           En 2010, había más de 2 mil millones de usuarios de Internet en todo
           el mundo. En 2021, había más de 4.6 mil millones.
         </p>
@@ -126,6 +126,9 @@ export default function Website() {
           className="w-[120%] mt- object-cover"
         />
       </Iphone>
+      <h2 className="text-4xl font-bold mb-6 text-center lg: px-10  ">
+        ¿Por qué es importante contar con un sitio web profesional?
+      </h2>
       <div className="flex flex-col mb-6 px-6">
         <div className="mx-auto my-6 ">
           <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
@@ -206,14 +209,19 @@ export default function Website() {
         Resolvemos tus dudas
       </h2>
       <FaqCard
+        question="¿De qué manera están construidad las páginas web?"
+        answer="Nuestras páginas web están programadas desde cero en React, Tailwind y Next js. A diferencia de otros que utilizan creadores de páginas, limitando las posibilidades del clientes. "
+      />
+
+      <FaqCard
+        question="¿Qué es una página web estática?"
+        answer="Es una página dónde el contenido es añadido directamente en el código y no puede ser manipulado a través de un panel administrativo. Es útil para empresas que no suelen cambiar su contenido constantemente"
+      />
+      <FaqCard
         question="¿Qué es una página web dinámica?"
         answer="Es una página donde el contenido de texto o imágenes puede cambiar
           segun las necesidades de la empresa, a traves de un panel de
           admistración facil de manipular construido en Sanity. Es útil para empresas que constantemente requieren cambios en su contenido"
-      />
-      <FaqCard
-        question="¿Qué es una página web estática?"
-        answer="Es una página dónde el contenido es añadido directamente en el código y no puede ser manipulado a través de un panel administrativo. Es útil para empresas que no suelen cambiar su contenido constantemente"
       />
       <FaqCard
         question="¿Es fácil editar una página dinámica?"
@@ -242,6 +250,14 @@ export default function Website() {
       <FaqCard
         question="¿Qué es una página personalizada?"
         answer="Una página personalizada es una pagina diseñada para cumplir las necesidades especificas de tu empresa, el precio puede cambiar según las funciones requeridas o extensión."
+      />
+      <FaqCard
+        question="¿Qué tan rápidas son sus páginas web?"
+        answer="El tiempo total de carga de nuestras páginas web suele ser de menos de un segundo."
+      />
+      <FaqCard
+        question="¿Qué tan seguras son sus páginas web?"
+        answer="Son expremadamente seguras debido a su arquitectura moderna desacoplada."
       />
     </div>
   );
