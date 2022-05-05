@@ -17,7 +17,7 @@ const litePlan = {
 
 const proPlan = {
   title: "Pro",
-  description: "Para empresas establesidas que buscan un sitio web completo",
+  description: "Para empresas establecidas que buscan un sitio web completo",
   price: "$16,000",
   frequency: "Pago único",
   features: [
@@ -32,7 +32,7 @@ const proPlan = {
 
 const proMaxPlan = {
   title: "Pro Max",
-  description: "Para empresas establesidas que buscan un sitio web extenso",
+  description: "Para empresas establecidas que buscan un sitio web extenso",
   price: "$20,000",
   frequency: "Pago único",
   features: [
@@ -65,7 +65,7 @@ const litePlanD = {
 const proPlanD = {
   title: "Pro Dinámica",
   description:
-    "Para empresas establesidas que buscan un sitio web completo y requieren cambios constantes en su contenido.",
+    "Para empresas establecidas que buscan un sitio web completo y requieren cambios constantes en su contenido.",
   price: "$16,000",
   frequency: "Pago único",
   features: [
@@ -82,7 +82,7 @@ const proPlanD = {
 const proMaxPlanD = {
   title: "Pro Max Dinámica",
   description:
-    "Para empresas establesidas que buscan un sitio web extenso y requieren cambios constantes en su contenido.",
+    "Para empresas establecidas que buscan un sitio web extenso y requieren cambios constantes en su contenido.",
   price: "$20,000",
   frequency: "Pago único",
   features: [
