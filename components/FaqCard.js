@@ -7,7 +7,7 @@ export default function FaqCard({ question, answer }) {
   return (
     <div
       onClick={() => setOpen(!open)}
-      className="p-6 bg-gray-100 rounded-2xl mx-6 my-2 transition duration-300 cursor-pointer"
+      className="p-6 bg-gray-100 rounded-xl mx-6 my-2 transition duration-300 cursor-pointer"
     >
       <div className="flex relative ">
         <h3 className="">{question}</h3>
