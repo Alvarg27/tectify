@@ -68,7 +68,7 @@ export default function technologies() {
     },
   ];
   return (
-    <div className="px-4 py-12 flex flex-col">
+    <div className="px-4 py-12 flex flex-col relative bg-white">
       <h2 className="text-5xl font-bold mb-6 text-center lg: px-10">
         Somos los mejores en lo que hacemos.
       </h2>

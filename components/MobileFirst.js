@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function MobileFirst({}) {
   return (
-    <div className="flex flex-col py-20">
+    <div className="flex flex-col py-20 relative bg-white">
       <FaUser className="text-red-400 m-auto text-5xl font-bold" />
       <h2 className="text-5xl font-bold mb-6 text-center lg: px-10">
         Prioridad al usuario móvil

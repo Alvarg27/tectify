@@ -3,7 +3,7 @@ import { FaLock } from "react-icons/fa";
 
 export default function Security() {
   return (
-    <div className="px-4 py-12 flex flex-col">
+    <div className="px-4 py-12 flex flex-col relative bg-white">
       <FaLock className="text-blue-700 m-auto text-5xl font-bold" />
       <h2 className="text-5xl font-bold mb-6 text-center lg:px-10">
         Más seguridad que nunca
