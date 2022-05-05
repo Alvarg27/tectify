@@ -184,7 +184,7 @@ export default function Website() {
             }}
             className="m-auto"
           >
-            Página estática
+            Página dinámica
           </p>
         </div>
         <div
