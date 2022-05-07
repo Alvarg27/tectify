@@ -8,10 +8,15 @@ export default function Layout({ children }) {
     <div lang="es">
       <Head>
         <title>tectify</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
           name="description"
           content="Soluciones tecnológicas para el futuro"
         />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
         <link rel="icon" href="/tectify-icon.webp" />
       </Head>
       <Header />

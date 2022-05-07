@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import {
   FaUtensils,
   FaShoppingCart,
@@ -10,9 +10,11 @@ import {
   FaMobile,
   FaColumns,
   FaStore,
+  FaArrowRight,
 } from "react-icons/fa";
 
 export default function ServiceCard({ service }) {
+  const [isHover, setIsHover] = useState(false);
   const router = useRouter();
   const renderIcon = () => {
     if (service.icon === "FaShoppingCart") {
@@ -34,21 +36,35 @@ export default function ServiceCard({ service }) {
     }
   };
   return (
-    <div className="w-full lg:w-[25%]">
+    <div
+      onMouseOver={() => setIsHover(true)}
+      onMouseOut={() => setIsHover(false)}
+      className="w-full lg:w-[25%]"
+    >
       <div
         onClick={() => router.push(service.link)}
-        className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4 h-[180px] flex flex-col cursor-pointer "
+        className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4  h-[170px] flex flex-col cursor-pointer lg:h-[200px] "
       >
-        <div className="my-auto">
-          <div className="flex justify-between my-auto">
-            <h3 className="font-bold">{service.title}</h3>
-            {renderIcon()}
-          </div>
-          <div className="my-auto">
+        <div className="my-auto flex flex-col justify-between h-full">
+          <div className="my-0">
+            <div className="flex justify-between my-0">
+              <h3 className="font-bold text-lg">{service.title}</h3>
+              {renderIcon()}
+            </div>
+
             <p className="mr-8">{service.description}</p>
-            <p className="text-blue-700 mt-1 font-bold cursor-pointer">
+          </div>
+          <div className="flex my-0">
+            <p className="text-blue-700 font-bold cursor-pointer my-auto mr-2 w-auto">
               Ver más
             </p>
+            <FaArrowRight
+              className="my-auto  text-blue-700 transition duration-300"
+              style={{
+                opacity: isHover ? 1 : 0,
+                transform: `translateX(${isHover ? 0 : -40}%)`,
+              }}
+            />
           </div>
         </div>
       </div>

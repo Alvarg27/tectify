@@ -9,11 +9,8 @@ export default function Security() {
         Más seguridad que nunca
       </h2>
       <h2 className="text-3xl mb-6 text-center text-gray-500 lg:px-10">
-        <b>
-          Diseñamos protocolos de seguridad robustos para proteger tu
-          información y la de tus usuarios
-        </b>
-        , antes de que sea demasiado tarde.
+        <b>Protegemos tu información y la de tus usuarios</b>, antes de que sea
+        demasiado tarde.
       </h2>
 
       <h2 className=" mb-6 text-center text-gray-500 ">

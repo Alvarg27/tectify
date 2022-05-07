@@ -19,7 +19,10 @@ export default function MobileFirst({}) {
         los <b>distintos tamaños de pantalla</b> que existen.
       </h2>
       <div
-        style={{ transform: `rotate(${inView ? 0 : 90}deg)`, transition: "1s" }}
+        style={{
+          transform: `rotate(${inView ? 0 : 90}deg)`,
+          transition: ".5s",
+        }}
       >
         <Iphone>
           <div
