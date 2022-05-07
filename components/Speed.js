@@ -1,10 +1,13 @@
 import React from "react";
 import { FaBolt } from "react-icons/fa";
-import SpeedElement from "./SpeedElement";
+
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
+import CircularProgress from "./CircularProgress";
 
 export default function Speed() {
+  const { ref, inView } = useInView();
+  console.log(inView);
   return (
     <div className="px-4 py-12 flex flex-col relative bg-white">
       <FaBolt className="text-yellow-400 m-auto text-5xl font-bold" />
@@ -14,7 +17,9 @@ export default function Speed() {
       <h2 className="text-3xl mb-6 text-center text-gray-500 lg: px-10">
         Vuelve tu página hasta <b>400% más rápida.</b>
       </h2>
-      <SpeedElement />
+      <div ref={ref}>
+        <CircularProgress inView={inView} />
+      </div>
       <Link href="https://pagespeed.web.dev/report?url=https%3A%2F%2Ftectify.io%2F&form_factor=desktop">
         <a target="_blank" className="mx-auto">
           <button className="bg-blue-700 h-12 rounded-md my-10 mx-auto px-8 text-white transition duration-300 hover:bg-blue-900">

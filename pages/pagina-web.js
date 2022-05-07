@@ -104,7 +104,6 @@ const proMaxPlanD = {
 export default function Website() {
   const { ref, inView } = useInView();
   const [dynamic, setDynamic] = useState(false);
-  console.log(inView);
 
   return (
     <div className="py-20 relative z-20 flex flex-col">
