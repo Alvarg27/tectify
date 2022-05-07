@@ -9,7 +9,7 @@ export default function Speed() {
   const { ref, inView } = useInView();
   console.log(inView);
   return (
-    <div className="px-4 py-12 flex flex-col relative bg-white">
+    <div className="px-4 py-6 flex flex-col relative bg-white">
       <FaBolt className="text-yellow-400 m-auto text-5xl font-bold" />
       <h2 className="text-5xl font-bold mb-6 text-center lg: px-10 ">
         Sitios web ultrarrápidos

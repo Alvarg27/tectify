@@ -47,7 +47,7 @@ export default function technologies() {
     },
     {
       id: 6,
-      title: "Digital Ocan",
+      title: "Digital Ocean",
       image: "/digital-ocean-logo.webp",
       description: "Despliega tus aplicaciones de forma eficaz.",
       website: "https://www.digitalocean.com/",
@@ -77,7 +77,7 @@ export default function technologies() {
         Dile adiós a Wordpress y <b>reinventa tu empresa</b> con las tecnologías
         más modernas desarrolladas a tu medida.
       </h2>
-      <div className="flex overflow-x-auto my-auto no-scrollbar lg:mx-auto  ">
+      <div className="h-[180px]  flex overflow-x-auto my-auto no-scrollbar lg:mx-auto">
         {technologies.map((technology) => (
           <TechnologyCard key={technology.id} technology={technology} />
         ))}
