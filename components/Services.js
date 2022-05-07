@@ -15,12 +15,14 @@ export default function Services({ offsetY }) {
       title: "E-commerce",
       description: "Soluciones de comercio electrónico integrales.",
       icon: "FaShoppingCart",
+      link: "/e-commerce",
     },
     {
       id: 4,
       title: "Menú de restaurante",
       description: "Menú interactivo, rápido y facil de editar.",
       icon: "FaUtensils",
+      link: "/menu-restaurante",
     },
     {
       id: 5,
@@ -28,6 +30,7 @@ export default function Services({ offsetY }) {
       description:
         "Gestiona y organiza tus reservaciones de manera automatizada.",
       icon: "FaCalendarAlt",
+      link: "/administrador-reservaciones",
     },
     {
       id: 6,

@@ -37,7 +37,7 @@ export default function ServiceCard({ service }) {
     <div className="w-full lg:w-[25%]">
       <div
         onClick={() => router.push(service.link)}
-        className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4 h-[180px] flex flex-col "
+        className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4 h-[180px] flex flex-col cursor-pointer "
       >
         <div className="my-auto">
           <div className="flex justify-between my-auto">

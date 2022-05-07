@@ -13,8 +13,8 @@ module.exports = {
       // that is actual animation
       keyframes: () => ({
         fadeOut: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
+          "0%": { opacity: 0, maxHeight: "0px" },
+          "100%": { opacity: 1, maxHeight: "400px" },
         },
       }),
     },
