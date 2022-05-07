@@ -4,7 +4,10 @@ import FaqCard from "../components/FaqCard";
 import Iphone from "../components/Iphone";
 import PriceCard from "../components/PriceCard";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useEffect } from "react";
+import Counter from "../components/Counter";
+import { useInView } from "react-intersection-observer";
 
 const litePlan = {
   title: "Lite",
@@ -99,7 +102,10 @@ const proMaxPlanD = {
 };
 
 export default function Website() {
+  const { ref, inView } = useInView();
   const [dynamic, setDynamic] = useState(false);
+  console.log(inView);
+
   return (
     <div className="py-20 relative z-20 flex flex-col">
       <div className="m-auto flex flex-col">
@@ -130,30 +136,18 @@ export default function Website() {
         ¿Por qué es importante contar con un sitio web profesional?
       </h2>
       <div className="flex flex-col mb-6 px-6">
-        <div className="mx-auto my-6 ">
-          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
-            75%
-          </h2>
+        <div ref={ref} className="mx-auto my-6 ">
+          <Counter finalNumber={75} unit="%" inView={inView} />
           <p className="text-center ">
             de los usuarios admite emitir juicios sobre la credibilidad de una
             empresa en función del diseño de su sitio web.
           </p>
         </div>
         <div className="mx-auto  my-6 ">
-          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
-            85%
-          </h2>
+          <Counter finalNumber={85} unit="%" inView={inView} />
           <p className="text-center ">
             de los clientes B2B buscan en la web antes de tomar una decisión de
             compra
-          </p>
-        </div>
-        <div className="mx-auto my-6 ">
-          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
-            0.05s
-          </h2>
-          <p className="text-center ">
-            tardan los usuarios en formar una opinión sobre su sitio web.
           </p>
         </div>
       </div>

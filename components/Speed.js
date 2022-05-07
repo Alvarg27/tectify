@@ -2,6 +2,7 @@ import React from "react";
 import { FaBolt } from "react-icons/fa";
 import SpeedElement from "./SpeedElement";
 import Link from "next/link";
+import { useInView } from "react-intersection-observer";
 
 export default function Speed() {
   return (
