@@ -22,25 +22,43 @@ export default function MobileFirst({}) {
         style={{ transform: `rotate(${inView ? 0 : 90}deg)`, transition: "1s" }}
       >
         <Iphone>
-          <div ref={ref} className="m-auto flex flex-col">
-            <h3 className="text-gray-500 text-xl  mb-6  text-center ">
+          <div
+            ref={ref}
+            className="m-auto h-full py-20 flex flex-col bg-gradient-to-tl from-[#a6c0fe] to-[#f68084]"
+          >
+            <h3 className="text-gray-100 text-xl  mb-6  text-center ">
               Porcentaje de <b>usuarios web por tipo de dispositivo</b> en 2020
             </h3>
             <div className="m-auto">
-              <Counter finalNumber={68} unit="%" inView={inView} />
-              <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-xl font-bold mb-6 text-center ">
+              <Counter
+                finalNumber={68}
+                unit="%"
+                inView={inView}
+                styles={"text-gray-100 text-6xl font-bold text-center"}
+              />
+              <h3 className="text-gray-100  text-xl font-bold mb-6 text-center ">
                 Móvil
               </h3>
             </div>
             <div className="m-auto">
-              <Counter finalNumber={29} unit="%" inView={inView} />
-              <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-xl font-bold mb-6 text-center ">
+              <Counter
+                finalNumber={29}
+                unit="%"
+                inView={inView}
+                styles={"text-gray-100 text-6xl font-bold text-center"}
+              />
+              <h3 className="text-gray-100  text-xl font-bold mb-6 text-center ">
                 Escritorio
               </h3>
             </div>
             <div className="m-auto">
-              <Counter finalNumber={3} unit="%" inView={inView} />
-              <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-xl font-bold text-center ">
+              <Counter
+                finalNumber={3}
+                unit="%"
+                inView={inView}
+                styles={"text-gray-100 text-6xl font-bold text-center"}
+              />
+              <h3 className="text-gray-100  text-xl font-bold mb-6 text-center ">
                 Tablet
               </h3>
             </div>

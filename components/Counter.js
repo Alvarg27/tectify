@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-export default function Counter({ inView, finalNumber, unit }) {
+export default function Counter({ inView, finalNumber, unit, styles }) {
   const [number, setNumber] = useState(finalNumber);
   const animateNumber = (callback, from, to, duration) => {
     let start = null,
@@ -35,7 +35,13 @@ export default function Counter({ inView, finalNumber, unit }) {
 
   return (
     <div>
-      <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
+      <h2
+        className={
+          styles
+            ? styles
+            : "text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center"
+        }
+      >
         {number}
       </h2>
     </div>

@@ -155,35 +155,25 @@ export default function Website() {
       </h2>
       <div className="flex mx-auto w-[90%]  overflow-hidden rounded-lg bg-gray-100 cursor-pointer h-[50px] relative">
         <div
+          style={{
+            background: dynamic ? "" : "rgb(29 78 216)",
+            color: dynamic ? "" : "white",
+          }}
           onClick={() => setDynamic(false)}
-          className="w-1/2 flex relative z-10"
+          className="w-1/2 flex relative z-10 transition duration-300"
         >
-          <p
-            style={{
-              color: dynamic ? "" : "white",
-            }}
-            className="m-auto"
-          >
-            Página estática
-          </p>
+          <p className="m-auto">Página estática</p>
         </div>
         <div
+          style={{
+            background: dynamic ? "rgb(29 78 216)" : "",
+            color: dynamic ? "white" : "",
+          }}
           onClick={() => setDynamic(true)}
-          className="w-1/2 flex relative z-10"
+          className="w-1/2 flex relative z-10 transition duration-300"
         >
-          <p
-            style={{
-              color: dynamic ? "white" : "",
-            }}
-            className="m-auto"
-          >
-            Página dinámica
-          </p>
+          <p className="m-auto">Página dinámica</p>
         </div>
-        <div
-          style={{ left: dynamic ? "50%" : 0, transition: "0.3s" }}
-          className="w-1/2 h-full bg-blue-700 absolute z-0 rounded-lg"
-        ></div>
       </div>
       {dynamic ? (
         <div className="flex flex-wrap mb-10">

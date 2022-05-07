@@ -9,8 +9,8 @@ export default function FaqCard({ question, answer }) {
       onClick={() => setOpen(!open)}
       className="p-6 bg-gray-100 rounded-xl mx-6 my-2  cursor-pointer "
     >
-      <div className="flex relative text-lg">
-        <h3 className="">{question}</h3>
+      <div className="flex relative text-lg ">
+        <h3 className="mr-[20px]">{question}</h3>
         <FaAngleDown
           className="transition duration-300 top-1 absolute right-0 text-gray-400"
           style={{
