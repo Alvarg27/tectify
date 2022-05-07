@@ -2,12 +2,7 @@ import React from "react";
 
 export default function TextSection({ offsetY }) {
   return (
-    <div
-      className="w-full h-[600px] m bg-blue-700 rounded-t-3xl flex px-4 transition duration-300 z-0  lg:h-[400px]"
-      style={{
-        transform: `translateY(${offsetY < 100 ? 100 : 0}%)`,
-      }}
-    >
+    <div className="w-full h-[600px] bg-blue-700 rounded-t-3xl flex px-4 transition duration-300 z-0  lg:h-[400px]">
       <div className="m-auto  text-center">
         <h2 className="text-white text-5xl font-bold mb-6">
           ¡Haciendo posible
