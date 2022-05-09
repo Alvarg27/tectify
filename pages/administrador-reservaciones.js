@@ -98,7 +98,7 @@ const proMaxPlanD = {
   color: "bg-blue-700",
 };
 
-export default function ECommerce() {
+export default function ReservationManager() {
   return (
     <div className="py-20 relative z-20 flex flex-col">
       <div className="m-auto flex flex-col">

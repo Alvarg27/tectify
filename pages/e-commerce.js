@@ -9,7 +9,7 @@ import { useState } from "react";
 const litePlan = {
   title: "Lite",
   description: "Para empresas que bucan hacer su lanzamiento web",
-  price: "$13,000",
+  price: "$25,000",
   frequency: "Pago único",
   features: ["Hosting en netlify", "Diseño de UX", "Página de inicio"],
   color: "bg-blue-300",
@@ -18,7 +18,7 @@ const litePlan = {
 const proPlan = {
   title: "Pro",
   description: "Para empresas establecidas que buscan un sitio web completo",
-  price: "$16,000",
+  price: "$30,000",
   frequency: "Pago único",
   features: [
     "Hosting en netlify",
@@ -26,6 +26,11 @@ const proPlan = {
     "Página de inicio",
     "Página de contacto",
     "Página de about",
+    "Página de producto",
+    "Página de categoría de producto",
+    "Productos ilimitados",
+    "2% de comisión",
+    "Pagos con tarjetas de débito y crédito a través de stripe",
   ],
   color: "bg-blue-500",
 };
@@ -33,62 +38,11 @@ const proPlan = {
 const proMaxPlan = {
   title: "Pro Max",
   description: "Para empresas establecidas que buscan un sitio web extenso",
-  price: "$20,000",
+  price: "$40,000",
   frequency: "Pago único",
   features: [
     "Hosting en netlify",
     "Diseño de UX",
-    "Página de inicio",
-    "Página de contacto",
-    "Página de about",
-    "Página de servicios",
-    "Página personalizada",
-  ],
-  color: "bg-blue-700",
-};
-
-const litePlanD = {
-  title: "Lite Dinámico",
-  description:
-    "Para empresas que bucan hacer su lanzamiento web y requieren cambios constantes en su contenido.",
-  price: "$16,250",
-  frequency: "Pago único",
-  features: [
-    "Hosting en netlify",
-    "Diseño de UX",
-    "Panel de administrador en Sanity para editar contenido",
-    "Página de inicio",
-  ],
-  color: "bg-blue-300",
-};
-
-const proPlanD = {
-  title: "Pro Dinámica",
-  description:
-    "Para empresas establecidas que buscan un sitio web completo y requieren cambios constantes en su contenido.",
-  price: "$20,000",
-  frequency: "Pago único",
-  features: [
-    "Hosting en netlify",
-    "Diseño de UX",
-    "Panel de administrador en Sanity para editar contenido",
-    "Página de inicio",
-    "Página de contacto",
-    "Página de about",
-  ],
-  color: "bg-blue-500",
-};
-
-const proMaxPlanD = {
-  title: "Pro Max Dinámica",
-  description:
-    "Para empresas establecidas que buscan un sitio web extenso y requieren cambios constantes en su contenido.",
-  price: "$25,000",
-  frequency: "Pago único",
-  features: [
-    "Hosting en netlify",
-    "Diseño de UX",
-    "Panel de administrador en Sanity para editar contenido",
     "Página de inicio",
     "Página de contacto",
     "Página de about",
