@@ -8,7 +8,6 @@ export default function Layout({ children }) {
     <div lang="es">
       <Head>
         <title>tectify</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
           name="description"
           content="Soluciones tecnológicas para el futuro"
