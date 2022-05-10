@@ -15,6 +15,7 @@ export default function Contact() {
   const router = useRouter();
   const { service } = router.query;
   const [step, setStep] = useState(1);
+  const [error, setError] = useState();
   const [data, setData] = useState({
     name: undefined,
     company: undefined,
@@ -37,6 +38,10 @@ export default function Contact() {
     setData({ ...data });
   }, [service]);
 
+  useEffect(() => {
+    setError("");
+  }, [step]);
+
   return (
     <div className="py-20">
       {step === 1 ? (
@@ -53,9 +58,16 @@ export default function Contact() {
               setData={setData}
               width="50%"
             />
-
+            <p className="mx-4 text-red-400">{error}</p>
             <button
-              onClick={() => setStep(step + 1)}
+              onClick={() => {
+                setError("");
+                if (!data.name) {
+                  setError("Ingresa tu nombre y apellido para continuar");
+                  return;
+                }
+                setStep(step + 1);
+              }}
               className="bg-blue-700 h-12 rounded-md mx-2 mt-10 w-full text-white transition duration-300 hover:bg-blue-900"
             >
               Continuar
@@ -85,9 +97,16 @@ export default function Contact() {
               setData={setData}
               width="50%"
             />
-
+            <p className="mx-4 text-red-400">{error}</p>
             <button
-              onClick={() => setStep(step + 1)}
+              onClick={() => {
+                setError("");
+                if (!data.company) {
+                  setError("Ingresa tu empresa o negocio para continuar");
+                  return;
+                }
+                setStep(step + 1);
+              }}
               className="bg-blue-700 h-12 rounded-md mx-2 mt-10 w-full text-white transition duration-300 hover:bg-blue-900"
             >
               Continuar
@@ -125,9 +144,16 @@ export default function Contact() {
               setData={setData}
               width="50%"
             />
-
+            <p className="mx-4 text-red-400">{error}</p>
             <button
-              onClick={() => setStep(step + 1)}
+              onClick={() => {
+                setError("");
+                if (!data.email || !data.phone) {
+                  setError("Ingresa tu email y teléfono para continuar");
+                  return;
+                }
+                setStep(step + 1);
+              }}
               className="bg-blue-700 h-12 rounded-md mx-2 mt-10 w-full text-white transition duration-300 hover:bg-blue-90"
             >
               Continuar
@@ -189,6 +215,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+            <p className="mx-4 text-red-400 w-full mb-6">{error}</p>
             <div className="mx-2 flex">
               <div
                 onClick={() => {
@@ -207,11 +234,19 @@ export default function Contact() {
                 Deseo recibir las mejores ofertas y promociones de tectify.
               </p>
             </div>
+
             <button
-              onClick={() => setStep(step + 1)}
+              onClick={() => {
+                setError("");
+                if (!data.contactMethod) {
+                  setError("Ingresa un método de contacto para continuar");
+                  return;
+                }
+                setStep(step + 1);
+              }}
               className="bg-blue-700 h-12 rounded-md mx- mt-10 w-full text-white transition duration-300 hover:bg-blue-900 m-2"
             >
-              Continuar
+              Enviar
             </button>
             <p
               onClick={() => setStep(step - 1)}
@@ -227,7 +262,7 @@ export default function Contact() {
       {step === 5 ? (
         <div className="flex flex-col">
           <FaCheckCircle className="m-auto text-blue-300 text-6xl mb-6" />
-          <h2 className="text-4xl font-bold text-center lg:px-10 ">
+          <h2 className="text-4xl font-bold text-center">
             ¡Gracias por dejar tus datos {data.name.split(" ")[0]}!
           </h2>
           <p className="m-auto text-gray-500 text-xl text-center px-6">
@@ -237,7 +272,7 @@ export default function Contact() {
           </p>
           <button
             onClick={() => router.push("/")}
-            className="bg-blue-700 h-12 rounded-md mx- mt-10 w-full text-white transition duration-300 hover:bg-blue-900 m-2"
+            className="bg-blue-700 h-12 rounded-md mx-4 mt-10 text-white transition duration-300 hover:bg-blue-900 m-2"
           >
             Regresar a inicio
           </button>

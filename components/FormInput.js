@@ -8,7 +8,8 @@ export default function FormInput({
   setData,
   width,
 }) {
-  const [input, setInput] = useState();
+  const selectedValue = data[type] ? data[type] : undefined;
+  const [input, setInput] = useState(selectedValue);
 
   const handleInput = (e) => {
     e.preventDefault();
@@ -28,6 +29,7 @@ export default function FormInput({
         type={type}
         onChange={(e) => handleInput(e)}
         placeholder={label}
+        value={input}
       />
     </div>
   );
