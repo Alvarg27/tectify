@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import {
   FaCheck,
+  FaCheckCircle,
   FaEnvelope,
   FaWhatsapp,
   FaWhatsappSquare,
@@ -15,8 +16,7 @@ export default function Contact() {
   const { service } = router.query;
   const [step, setStep] = useState(1);
   const [data, setData] = useState({
-    firstName: undefined,
-    lastName: undefined,
+    name: undefined,
     company: undefined,
     email: undefined,
     phone: undefined,
@@ -220,6 +220,27 @@ export default function Contact() {
               Regresar
             </p>
           </div>
+        </div>
+      ) : (
+        ""
+      )}
+      {step === 5 ? (
+        <div className="flex flex-col">
+          <FaCheckCircle className="m-auto text-blue-300 text-6xl mb-6" />
+          <h2 className="text-4xl font-bold text-center lg:px-10 ">
+            ¡Gracias por dejar tus datos {data.name.split(" ")[0]}!
+          </h2>
+          <p className="m-auto text-gray-500 text-xl text-center px-6">
+            En breve nos pondremos en contacto contigo a traves de tu{" "}
+            {data.contactMethod === "email" ? "correo electrónico" : ""}
+            {data.contactMethod === "whatsapp" ? "whatsapp" : ""}.
+          </p>
+          <button
+            onClick={() => router.push("/")}
+            className="bg-blue-700 h-12 rounded-md mx- mt-10 w-full text-white transition duration-300 hover:bg-blue-900 m-2"
+          >
+            Regresar a inicio
+          </button>
         </div>
       ) : (
         ""
