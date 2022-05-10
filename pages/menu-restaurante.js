@@ -27,6 +27,7 @@ const proPlan = {
     "Código QR",
   ],
   color: "bg-blue-500",
+  service: "menu-restaurante",
 };
 
 export default function RestaurantMenu() {

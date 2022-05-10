@@ -1,6 +1,12 @@
+import { useRouter } from "next/router";
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-export default function PriceCard({ plan }) {
+export default function PriceCard({ plan, service }) {
+  const router = useRouter();
+
+  const handleContact = () => {
+    router.push(`/contacto/${plan.service}&${plan.title}`);
+  };
   return (
     <div className="w-[90%] mx-auto lg:w-1/3">
       <div
@@ -22,7 +28,10 @@ export default function PriceCard({ plan }) {
             ))}
           </ul>
         </div>
-        <button className="bg-white h-12 rounded-md my-10 mx-auto w-[100%] text-blue-700 transition duration-300 hover:bg-gray-200">
+        <button
+          onClick={() => handleContact()}
+          className="bg-white h-12 rounded-md my-10 mx-auto w-[100%] text-blue-700 transition duration-300 hover:bg-gray-200"
+        >
           Contratar
         </button>
       </div>

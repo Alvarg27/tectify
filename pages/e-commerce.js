@@ -30,6 +30,7 @@ const proPlan = {
     "Variantes de producto",
   ],
   color: "bg-blue-500",
+  service: "e-commerce",
 };
 
 export default function ECommerce() {

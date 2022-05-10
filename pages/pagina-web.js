@@ -16,6 +16,7 @@ const litePlan = {
   frequency: "Pago único",
   features: ["Hosting en netlify", "Diseño de UX", "Página de inicio"],
   color: "bg-blue-300",
+  service: "pagina-web",
 };
 
 const proPlan = {
@@ -31,6 +32,7 @@ const proPlan = {
     "Página de about",
   ],
   color: "bg-blue-500",
+  service: "pagina-web",
 };
 
 const proMaxPlan = {
@@ -48,6 +50,7 @@ const proMaxPlan = {
     "Página personalizada",
   ],
   color: "bg-blue-700",
+  service: "pagina-web",
 };
 
 const litePlanD = {
@@ -63,6 +66,7 @@ const litePlanD = {
     "Página de inicio",
   ],
   color: "bg-blue-300",
+  service: "pagina-web",
 };
 
 const proPlanD = {
@@ -80,6 +84,7 @@ const proPlanD = {
     "Página de about",
   ],
   color: "bg-blue-500",
+  service: "pagina-web",
 };
 
 const proMaxPlanD = {
@@ -99,6 +104,7 @@ const proMaxPlanD = {
     "Página personalizada",
   ],
   color: "bg-blue-700",
+  service: "pagina-web",
 };
 
 export default function Website() {
