@@ -9,6 +9,11 @@ export default function Layout({ children }) {
       <Head>
         <title>tectify</title>
         <meta
+          name="facebook-domain-verification"
+          content="4ot8tuaepxjdmvfqgbcq02eqx1tk6i"
+        />
+
+        <meta
           name="description"
           content="Soluciones tecnológicas para el futuro"
         />

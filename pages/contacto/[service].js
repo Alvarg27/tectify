@@ -272,7 +272,7 @@ export default function Contact() {
           </p>
           <button
             onClick={() => router.push("/")}
-            className="bg-blue-700 h-12 rounded-md mx-4 mt-10 text-white transition duration-300 hover:bg-blue-900 m-2"
+            className="bg-blue-700 h-12 rounded-md mx-2n mt-10 text-white transition duration-300 hover:bg-blue-900 m-2"
           >
             Regresar a inicio
           </button>
