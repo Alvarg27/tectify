@@ -106,12 +106,11 @@ export default function ReservationManager() {
           Administrador de reservaciones
         </h1>
         <h2 className="text-2xl text-center text-gray-500 mb-4 px-6">
-          Lleva tu empresa al siguiente nivel con una página web moderna, rápida
-          y eficaz.
+          Mantén el orden y eficiencia de tu empresa con reservaciones
+          digitales.
         </h2>
         <p className="text-center text-gray-400 px-6">
-          En 2010, había más de 2 mil millones de usuarios de Internet en todo
-          el mundo. En 2021, había más de 4.6 mil millones.
+          Gestiona el calendario el calendario de tus profesionales.
         </p>
       </div>
 

@@ -4,7 +4,7 @@ export default function PriceCard({ plan }) {
   return (
     <div className="w-[90%] mx-auto lg:w-1/3">
       <div
-        className={`${plan.color}  p-10 my-5 mx-auto rounded-xl text-white shadow-lg  lg:mx-2 lg:h-[700px] flex flex-col justify-between`}
+        className={`${plan.color}  p-10 my-5 mx-auto rounded-xl text-white shadow-lg  lg:mx-2  flex flex-col justify-between`}
       >
         <div className="">
           <p className="mb-3 text-2xl">{plan.title}</p>
@@ -16,8 +16,8 @@ export default function PriceCard({ plan }) {
           <ul>
             {plan.features.map((item) => (
               <li key={item} className="flex my-2">
-                <FaCheck className="mx-0 my-auto" />
-                <p className="mx-2 my-auto">{item}</p>
+                <FaCheck className="mx-0 my-auto w-[20px]" />
+                <p className="mx-2">{item}</p>
               </li>
             ))}
           </ul>

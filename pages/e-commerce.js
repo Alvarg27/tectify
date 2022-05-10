@@ -5,19 +5,13 @@ import Iphone from "../components/Iphone";
 import PriceCard from "../components/PriceCard";
 import Image from "next/image";
 import { useState } from "react";
-
-const litePlan = {
-  title: "Lite",
-  description: "Para empresas que bucan hacer su lanzamiento web",
-  price: "$25,000",
-  frequency: "Pago único",
-  features: ["Hosting en netlify", "Diseño de UX", "Página de inicio"],
-  color: "bg-blue-300",
-};
+import { useInView } from "react-intersection-observer";
+import Counter from "../components/Counter";
 
 const proPlan = {
   title: "Pro",
-  description: "Para empresas establecidas que buscan un sitio web completo",
+  description:
+    "Para empresas establecidas que buscan vender sus productos a tavés de canales digitales",
   price: "$30,000",
   frequency: "Pago único",
   features: [
@@ -28,31 +22,18 @@ const proPlan = {
     "Página de about",
     "Página de producto",
     "Página de categoría de producto",
+    "Página de checkout",
+    "Página de agradecimiento",
     "Productos ilimitados",
-    "2% de comisión",
+    "2% de comisión por venta",
     "Pagos con tarjetas de débito y crédito a través de stripe",
+    "Variantes de producto",
   ],
   color: "bg-blue-500",
 };
 
-const proMaxPlan = {
-  title: "Pro Max",
-  description: "Para empresas establecidas que buscan un sitio web extenso",
-  price: "$40,000",
-  frequency: "Pago único",
-  features: [
-    "Hosting en netlify",
-    "Diseño de UX",
-    "Página de inicio",
-    "Página de contacto",
-    "Página de about",
-    "Página de servicios",
-    "Página personalizada",
-  ],
-  color: "bg-blue-700",
-};
-
 export default function ECommerce() {
+  const { ref, inView } = useInView();
   return (
     <div className="py-20 relative z-20 flex flex-col">
       <div className="m-auto flex flex-col">
@@ -60,12 +41,12 @@ export default function ECommerce() {
           E commerce
         </h1>
         <h2 className="text-2xl text-center text-gray-500 mb-4 px-6">
-          Lleva tu empresa al siguiente nivel con una página web moderna, rápida
-          y eficaz.
+          Haz crecer tus ventas implementando tu tienda online, de esta manera
+          podrás llegar a millones de personas.
         </h2>
         <p className="text-center text-gray-400 px-6">
-          En 2010, había más de 2 mil millones de usuarios de Internet en todo
-          el mundo. En 2021, había más de 4.6 mil millones.
+          NASDAQ estima que para el año 2040 el 95% de todas las compras se
+          realizarán a través del comercio electrónico.
         </p>
       </div>
 
@@ -80,33 +61,26 @@ export default function ECommerce() {
         />
       </Iphone>
       <h2 className="text-4xl font-bold mb-6 text-center lg: px-10  ">
-        ¿Por qué es importante contar con un sitio web profesional?
+        ¿Por qué es importante contar con un sitio de E commerce?
       </h2>
       <div className="flex flex-col mb-6 px-6">
-        <div className="mx-auto my-6 ">
-          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
-            75%
-          </h2>
+        <div ref={ref} className="mx-auto my-6 ">
+          <Counter finalNumber={23} unit="%" inView={inView} />
           <p className="text-center ">
-            de los usuarios admite emitir juicios sobre la credibilidad de una
-            empresa en función del diseño de su sitio web.
+            crece la industria del comerio electrónico cada año.
           </p>
         </div>
         <div className="mx-auto  my-6 ">
-          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
-            85%
-          </h2>
+          <Counter finalNumber={93} unit="%" inView={inView} />
           <p className="text-center ">
-            de los clientes B2B buscan en la web antes de tomar una decisión de
-            compra
+            de los usuarios de Internet a nivel mundial han comprado productos
+            en línea.
           </p>
         </div>
-        <div className="mx-auto my-6 ">
-          <h2 className="text-transparent bg-clip-text bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] text-6xl font-bold text-center ">
-            0.05s
-          </h2>
+        <div className="mx-auto  my-6 ">
+          <Counter finalNumber={27} unit="%" inView={inView} />
           <p className="text-center ">
-            tardan los usuarios en formar una opinión sobre su sitio web.
+            de la población mundial compra de manera online.
           </p>
         </div>
       </div>
@@ -115,9 +89,7 @@ export default function ECommerce() {
       </h2>
 
       <div className="flex flex-wrap mb-10">
-        <PriceCard plan={litePlan} />
         <PriceCard plan={proPlan} />
-        <PriceCard plan={proMaxPlan} />
       </div>
 
       <h2 className="text-5xl font-bold mb-6 text-center lg: px-10 ">
@@ -128,23 +100,30 @@ export default function ECommerce() {
         answer="Nuestras páginas web están programadas desde cero en React, Tailwind y Next js. A diferencia de otros que utilizan creadores de páginas, limitando las posibilidades del clientes. "
       />
       <FaqCard
+        question="¿Cómo la comisión del 2%?"
+        answer="La comisión del 2% es el cargo de servicio de la plataforma de comercio electronico implementada en el backend (commercejs.com o swell.is), el cobro se realiza directamente a una tarjeta de crédtio ó débito de manera mensual en base al total de las ordenes completadas."
+      />
+      <FaqCard
+        question="¿Dónde recibo los pagos de mis clientes?"
+        answer="Todas las transacciónes son llevadas acabo por Stripe, quien sera el encargado de transferir diariamente el dinero generado a una cuenta báncaria de tu elección."
+      />
+      <FaqCard
+        question="¿Cuál es la comisión de Stripe?"
+        answer="La comision es de 3.6% + $3 MXN, similar a cualquier terminal bancaria."
+      />
+      <FaqCard
+        question="¿Cómo puedo modificar mi tienda en linea?"
+        answer="Tu tienda cuenta con un panel administrativo fácil de operar donde podrás añadir y editar productos, revisar estado de ordenes y concretarlas, así como cientos de funciones más."
+      />
+      <FaqCard
         question="¿Las páginas web estan diseñadas para teléfono?"
         answer="En tectify nos aseguramos de que todas nuestras páginas web se adapten a todos los tamaños de pantalla, ya sea telefono, tableta o computadora. Garantizando así la mejor experiencia de usuario."
       />
       <FaqCard
-        question="¿Qué es una página web estática?"
-        answer="Es una página dónde el contenido es añadido directamente en el código y no puede ser manipulado a través de un panel administrativo. Es útil para empresas que no suelen cambiar su contenido constantemente"
+        question="¿Ustedes suben los productos?"
+        answer="No, nosotros solo subimos algunos produtos para probar el funcionamiento, sin embargo entregamos un manual explicando claramente como realizar este procedimiento"
       />
-      <FaqCard
-        question="¿Qué es una página web dinámica?"
-        answer="Es una página donde el contenido de texto o imágenes puede cambiar
-          segun las necesidades de la empresa, a traves de un panel de
-          admistración facil de manipular construido en Sanity. Es útil para empresas que constantemente requieren cambios en su contenido"
-      />
-      <FaqCard
-        question="¿Es fácil editar una página dinámica?"
-        answer="Nuestras páginas dinámicas tienen un panel de administrador diseñado a tu medida con Sanity. A diferencia de WordPress este panel al ser programado para tu empresa solo contiene lo que necesitas, por lo que la experiencia de usuario es muy fácil y cualquiera puede editar el contenido."
-      />
+
       <FaqCard
         question="¿Qué es hosting?"
         answer="Hosting es el servicio de alojamiento de la página web, tectify aloja todas sus paginas web en Netlify, uno de los provedores más estables, seguros y rápidos que existen en el mundo."
