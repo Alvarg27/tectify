@@ -21,7 +21,7 @@ const ChristmasCard = () => {
   return (
     <>
       {destinatario && (
-        <div className="min-h-screen bg-blue-500 flex items-center justify-center">
+        <div className="h-screen bg-blue-500 flex items-center justify-center overflow-hidden">
           <div className="px-10 flex flex-col justify-center items-center">
             <p className="text-gray-200 font-medium text-[80px] mb-10  rotate-90 ">{`*<]:{)`}</p>
             <p className=" text-center text-gray-200 font-medium text-xl">
