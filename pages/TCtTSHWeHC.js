@@ -23,7 +23,7 @@ const ChristmasCard = () => {
       {destinatario && (
         <div className="min-h-screen bg-blue-500 flex items-center justify-center">
           <div className="px-10 flex flex-col justify-center items-center">
-            <p className="text-gray-200 font-medium text-[80px] mb-12 rotate-90 ">{`*<]:{)`}</p>
+            <p className="text-gray-200 font-medium text-[80px] mb-10  rotate-90 ">{`*<]:{)`}</p>
             <p className=" text-center text-gray-200 font-medium text-xl">
               ¡Feliz navidad y año nuevo!
             </p>
@@ -64,7 +64,7 @@ const ChristmasCard = () => {
             </div>
             <p
               onClick={() => router.push("/")}
-              className="text-gray-200 mt-4 font-bold cursor-pointer mx-auto"
+              className="text-gray-200 font-bold cursor-pointer mx-auto"
             >
               tectify
             </p>
