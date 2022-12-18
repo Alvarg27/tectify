@@ -57,7 +57,7 @@ const ChristmasCard = () => {
                   </p>
                   <p className="text-blue-500">{`"${moment().format(
                     "DD/MM/YY"
-                  )}""`}</p>
+                  )}"`}</p>
                 </div>
               </div>
               <p>{`}`}</p>
