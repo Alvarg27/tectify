@@ -27,20 +27,33 @@ const ChristmasCard = () => {
               <p>{`{`}</p>
               <div className="ml-4 text-sm">
                 <div className="flex">
-                  <p>{`"destinatario":`}</p>
-                  <p>{`"${destinatario}"`}</p>
+                  <p className="text-rose-400">
+                    {`"destinatario"`}
+                    <b className="font-normal text-black mx-1">:</b>
+                  </p>
+                  <p className="text-blue-500">{`"${destinatario}"`}</p>
                 </div>
                 <div className="flex">
-                  <p>{`"mensaje":`}</p>
-                  <p>{` "Mis mejores deseos para estas fiestas"`}</p>
+                  <p className="text-rose-400">
+                    {`"mensaje"`}{" "}
+                    <b className="font-normal text-black mx-1">:</b>
+                  </p>
+                  <p className="text-blue-500">{` "Mis mejores deseos para estas fiestas"`}</p>
                 </div>
                 <div className="flex">
-                  <p>{`"remitente":`}</p>
-                  <p>{` "Alvar García Besné"`}</p>
+                  <p className="text-rose-400">
+                    {`"remitente"`}{" "}
+                    <b className="font-normal text-black mx-1">:</b>
+                  </p>
+                  <p className="text-blue-500">{` "Alvar García Besné"`}</p>
                 </div>
                 <div className="flex">
-                  <p>{`"fecha":`}</p>
-                  <p>{`"${moment().format("DD/MM/YY")}""`}</p>
+                  <p className="text-rose-400">
+                    {`"fecha"`} <b className="font-normal text-black mx-1">:</b>
+                  </p>
+                  <p className="text-blue-500">{`"${moment().format(
+                    "DD/MM/YY"
+                  )}""`}</p>
                 </div>
               </div>
               <p>{`}`}</p>
