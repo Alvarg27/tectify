@@ -7,10 +7,12 @@ import TextSection from "../components/TextSection";
 import Speed from "../components/Speed";
 import MobileFirst from "../components/MobileFirst";
 import Security from "../components/Security";
+import Footer from "../components/Footer";
 
 export default function Home({ offsetY }) {
   return (
     <div>
+      <Header />
       <Hero />
       <TextSection offsetY={offsetY} />
       <Services offsetY={offsetY} />
@@ -18,6 +20,7 @@ export default function Home({ offsetY }) {
       <Speed />
       <MobileFirst offsetY={offsetY} />
       <Security />
+      <Footer />
     </div>
   );
 }
