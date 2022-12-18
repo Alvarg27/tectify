@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div lang="es">
+    <>
       <Head>
         <title>tectify</title>
         <meta
@@ -24,6 +24,6 @@ export default function Layout({ children }) {
         <link rel="icon" href="/tectify-icon.webp" />
       </Head>
       {children}
-    </div>
+    </>
   );
 }
