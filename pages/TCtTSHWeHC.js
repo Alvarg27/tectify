@@ -8,14 +8,19 @@ const ChristmasCard = () => {
   const [destinatario, setDestinatario] = useState();
 
   useEffect(() => {
-    if (router.isReady && !router.query.destinatario) {
+    if (destinatario) {
+      return;
+    }
+    if (!router.isReady) {
       return;
     }
     if (!router.query.destinatario) {
+      router.push("/");
       return;
     }
     const result = router.query.destinatario.split("_").join(" ");
     setDestinatario(result);
+    router.push("TCtTSHWeHC", undefined, { shallow: true });
   }, [router]);
 
   return (
