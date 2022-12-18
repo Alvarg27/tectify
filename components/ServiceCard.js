@@ -11,6 +11,7 @@ import {
   FaColumns,
   FaStore,
   FaArrowRight,
+  FaCloud,
 } from "react-icons/fa";
 
 export default function ServiceCard({ service }) {
@@ -33,6 +34,8 @@ export default function ServiceCard({ service }) {
       return <FaMobile className="my-auto xm-0 text-indigo-400 text-2xl" />;
     } else if (service.icon === "FaColumns") {
       return <FaColumns className="my-auto xm-0 text-blue-700 text-2xl" />;
+    } else if (service.icon === "FaCloud") {
+      return <FaCloud className="my-auto xm-0 text-blue-500 text-2xl" />;
     }
   };
   return (
@@ -41,10 +44,7 @@ export default function ServiceCard({ service }) {
       onMouseOut={() => setIsHover(false)}
       className="w-full lg:w-[25%]"
     >
-      <div
-        onClick={() => router.push(service.link)}
-        className="rounded-lg shadow-lg mx-1 my-4 bg-white p-4  h-[170px] flex flex-col cursor-pointer lg:h-[200px] "
-      >
+      <div className="rounded-lg shadow-lg mx-1 my-4 bg-white px-4  py-6 flex flex-col  lg:h-[200px] justify-center">
         <div className="my-auto flex flex-col justify-between h-full">
           <div className="my-0">
             <div className="flex justify-between my-0">
@@ -54,18 +54,20 @@ export default function ServiceCard({ service }) {
 
             <p className="mr-8">{service.description}</p>
           </div>
-          <div className="flex my-0">
-            <p className="text-blue-700 font-bold cursor-pointer my-auto mr-2 w-auto">
-              Ver más
-            </p>
-            <FaArrowRight
-              className="my-auto  text-blue-700 transition duration-300"
-              style={{
-                opacity: isHover ? 1 : 0,
-                transform: `translateX(${isHover ? 0 : -40}%)`,
-              }}
-            />
-          </div>
+          {false && (
+            <div className="flex my-0">
+              <p className="text-blue-700 font-bold cursor-pointer my-auto mr-2 w-auto">
+                Ver más
+              </p>
+              <FaArrowRight
+                className="my-auto  text-blue-700 transition duration-300"
+                style={{
+                  opacity: isHover ? 1 : 0,
+                  transform: `translateX(${isHover ? 0 : -40}%)`,
+                }}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

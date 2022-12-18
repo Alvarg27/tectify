@@ -4,39 +4,18 @@ import ServiceCard from "./ServiceCard";
 export default function Services({ offsetY }) {
   const services = [
     {
-      id: 2,
-      title: "Pagina Web",
-      description: "Sitio web profesional para todo tipo de industrias.",
-      icon: "FaLayerGroup",
-      link: "/pagina-web",
-    },
-    {
-      id: 3,
-      title: "E-commerce",
-      description: "Soluciones de comercio electrónico integrales.",
-      icon: "FaShoppingCart",
-      link: "/e-commerce",
-    },
-    {
-      id: 4,
-      title: "Menú de restaurante",
-      description: "Menú interactivo, rápido y facil de editar.",
-      icon: "FaUtensils",
-      link: "/menu-restaurante",
-    },
-    {
-      id: 5,
-      title: "Administrador de reservaciones",
+      id: 8,
+      title: "Cloud software",
       description:
-        "Gestiona y organiza tus reservaciones de manera automatizada.",
-      icon: "FaCalendarAlt",
-      link: "/administrador-reservaciones",
+        "Desarollo de sofware en la nube para los procesos más demandantes",
+      icon: "FaCloud",
     },
     {
-      id: 6,
-      title: "Aplicaciones móviles",
-      description: "Aplicaciones mobiles especializadas a tus necesidades.",
-      icon: "FaMobileAlt",
+      id: 8,
+      title: "Data science",
+      description:
+        "Diseño de estructuras de datos y análisis estadistico de información.",
+      icon: "FaDatabase",
     },
     {
       id: 7,
@@ -46,11 +25,42 @@ export default function Services({ offsetY }) {
       icon: "FaServer",
     },
     {
-      id: 8,
-      title: "Data science",
+      id: 6,
+      title: "Aplicaciones móviles",
+      description: "Aplicaciones mobiles especializadas a tus necesidades.",
+      icon: "FaMobileAlt",
+    },
+
+    {
+      id: 5,
+      title: "Administrador de reservaciones",
       description:
-        "Diseño de estructuras de datos y análisis estadistico de información.",
-      icon: "FaDatabase",
+        "Gestiona y organiza tus reservaciones de manera automatizada.",
+      icon: "FaCalendarAlt",
+      link: "/administrador-reservaciones",
+    },
+    {
+      id: 4,
+      title: "Menú de restaurante",
+      description: "Menú interactivo, rápido y facil de editar.",
+      icon: "FaUtensils",
+      link: "/menu-restaurante",
+    },
+
+    {
+      id: 3,
+      title: "E-commerce",
+      description: "Soluciones de comercio electrónico integrales.",
+      icon: "FaShoppingCart",
+      link: "/e-commerce",
+    },
+
+    {
+      id: 2,
+      title: "Pagina Web",
+      description: "Sitio web profesional para todo tipo de industrias.",
+      icon: "FaLayerGroup",
+      link: "/pagina-web",
     },
   ];
   return (

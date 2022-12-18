@@ -13,9 +13,6 @@ export default function Hero() {
           administrativos, logísticos y operativos. Logrando así mantenerlas
           competitivas y eficientes en la era digital.
         </p>
-        <button className="bg-blue-700 h-12 rounded-md mt-10 mx-auto w-40 text-white transition duration-300 hover:bg-blue-900">
-          Contactar
-        </button>
       </div>
     </div>
   );

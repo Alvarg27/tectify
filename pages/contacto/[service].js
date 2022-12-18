@@ -26,7 +26,6 @@ export default function Contact() {
     plan: undefined,
     promotions: true,
   });
-  console.log(data);
 
   useEffect(() => {
     if (!service) {

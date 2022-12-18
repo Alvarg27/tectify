@@ -12,7 +12,6 @@ export default function Header() {
       >
         tectify
       </p>
-      <CgMenuGridO className="my-auto mx-0 text-5xl" />
     </div>
   );
 }
