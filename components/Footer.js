@@ -14,13 +14,14 @@ export default function Footer() {
       >
         tectify
       </h2>
-      <div className="text-white text-2xl flex mx-auto">
-        <FaInstagram className="m-auto mx-4  my-4" />
-        <FaEnvelope className="m-auto mx-4 my-4" />
-        <FaWhatsapp className="m-auto mx-4 my-4" />
-      </div>
+      {false && (
+        <div className="text-white text-2xl flex mx-auto">
+          <FaInstagram className="m-auto mx-4  my-4" />
+          <FaEnvelope className="m-auto mx-4 my-4" />
+          <FaWhatsapp className="m-auto mx-4 my-4" />
+        </div>
+      )}
       <p className="mx-auto text-white my-2 text-sm">
-        {" "}
         © Copyright {year}, tectify
       </p>
     </div>
