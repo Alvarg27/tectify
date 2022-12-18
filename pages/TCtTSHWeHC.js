@@ -11,7 +11,11 @@ const ChristmasCard = () => {
     if (router.isReady && !router.query.destinatario) {
       return;
     }
-    setDestinatario(router.query.destinatario);
+    if (!router.query.destinatario) {
+      return;
+    }
+    const result = router.query.destinatario.split("_").join(" ");
+    setDestinatario(result);
   }, [router]);
 
   return (
