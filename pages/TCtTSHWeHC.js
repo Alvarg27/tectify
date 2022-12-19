@@ -36,28 +36,28 @@ const ChristmasCard = () => {
               <p>{`{`}</p>
               <div className="ml-4 text-sm">
                 <div className="flex">
-                  <p className="text-rose-400">
+                  <p className="text-rose-400 flex">
                     {`"destinatario"`}
                     <b className="font-normal text-black mx-1">:</b>
                   </p>
                   <p className="text-blue-500">{`"${destinatario}"`}</p>
                 </div>
                 <div className="flex">
-                  <p className="text-rose-400">
+                  <p className="text-rose-400 flex">
                     {`"mensaje"`}{" "}
                     <b className="font-normal text-black mx-1">:</b>
                   </p>
                   <p className="text-blue-500">{` "Mis mejores deseos para estas fiestas"`}</p>
                 </div>
                 <div className="flex">
-                  <p className="text-rose-400">
+                  <p className="text-rose-400 flex">
                     {`"remitente"`}{" "}
                     <b className="font-normal text-black mx-1">:</b>
                   </p>
                   <p className="text-blue-500">{` "Alvar García Besné"`}</p>
                 </div>
                 <div className="flex">
-                  <p className="text-rose-400">
+                  <p className="text-rose-400 flex">
                     {`"fecha"`} <b className="font-normal text-black mx-1">:</b>
                   </p>
                   <p className="text-blue-500">{`"${moment().format(
