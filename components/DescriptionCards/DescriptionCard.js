@@ -35,7 +35,7 @@ const DescriptionCard = ({ className, large, children, label, listItems }) => {
           {listItems.map((x, i) => (
             <div
               key={i}
-              className={`flex w-full mt-4 items-center text-gray-300  ${
+              className={`flex w-full mt-4 items-center text-gray-500 dark:text-gray-300  ${
                 large ? "text-xl" : "text-md"
               }`}
             >
