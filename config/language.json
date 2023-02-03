@@ -1,4 +1,10 @@
 {
-  "defaultLanguage": { "language": "es", "label": "Español (MX)" },
-  "translations": [{ "language": "en", "label": "English (US)" }]
+  "defaultLanguage": {
+    "language": "es",
+    "label": "Español (MX)",
+    "shortLabel": "EN(MX)"
+  },
+  "translations": [
+    { "language": "en", "label": "English (US)", "shortLabel": "EN(US)" }
+  ]
 }

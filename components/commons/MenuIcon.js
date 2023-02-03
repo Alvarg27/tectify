@@ -10,17 +10,17 @@ const MenuIcon = () => {
       }`}
     >
       <div
-        className={` h-[4px] bg-black rounded-sm transition duration-300  ${
+        className={` h-[4px] bg-black dark:bg-white rounded-sm transition duration-300  ${
           isOpen ? "rotate-45 -translate-x-[0px] translate-y-[13px]" : ""
         }`}
       />
       <div
-        className={` h-[4px] bg-black rounded-sm transition duration-300 ${
+        className={` h-[4px] bg-black dark:bg-white rounded-sm transition duration-300 ${
           isOpen ? "opacity-0" : "opacity-100"
         }`}
       />
       <div
-        className={` h-[4px] bg-black rounded-sm transition duration-300  ${
+        className={` h-[4px] bg-black dark:bg-white rounded-sm transition duration-300  ${
           isOpen ? "-rotate-45 -translate-x-[0px] -translate-y-[13px]" : ""
         }`}
       />

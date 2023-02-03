@@ -7,7 +7,7 @@ import Button from "components/commons/Button";
 const DescriptionCard = ({ className, large, children, label, listItems }) => {
   return (
     <div
-      className={`w-full md:w-1/3 relative md:my-0 my-2 bg-white rounded-xl shadow-xl pb-8 drop-shadow flex flex-col justify-between items-center ${className}`}
+      className={`w-full md:w-1/3 relative md:my-0 my-2 bg-white dark:bg-neutral-900 rounded-xl shadow-xl pb-8 drop-shadow flex flex-col justify-between items-center transition duration-300 hover:scale-105 ${className}`}
     >
       <div
         className={`absolute left-1/2 -translate-x-1/2 -top-12 ${
@@ -25,7 +25,7 @@ const DescriptionCard = ({ className, large, children, label, listItems }) => {
           ></div>
         </div>
         <p
-          className={` font-medium text-center ${
+          className={` font-medium text-center dark:text-white ${
             large ? "text-3xl" : "text-xl"
           }`}
         >
@@ -35,7 +35,7 @@ const DescriptionCard = ({ className, large, children, label, listItems }) => {
           {listItems.map((x, i) => (
             <div
               key={i}
-              className={`flex w-full mt-4 items-center  ${
+              className={`flex w-full mt-4 items-center text-gray-300  ${
                 large ? "text-xl" : "text-md"
               }`}
             >

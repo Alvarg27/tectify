@@ -15,10 +15,10 @@ export default function Header() {
       <div
         style={{ height: offsetY > 70 ? 70 : 0, transition: "0.3s" }}
         className={`absolute top-0 w-full ${
-          offsetY > 70 ? "bg-white shadow-lg" : "bg-transparent"
+          offsetY > 70 ? "bg-white dark:bg-black shadow-lg" : "bg-transparent"
         }`}
       />
-      <div className="flex justify-between max-w-[1200px] w-[95%] h-full items-center mx-auto relative">
+      <div className="flex justify-between max-w-[1200px] w-[90%] h-full items-center mx-auto relative">
         <p
           onClick={() => router.push("/")}
           className="text-blue-700 text-4xl font-bold mx-0 my-auto cursor-pointer"
