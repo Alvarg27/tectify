@@ -28,7 +28,12 @@ export default function Header() {
         {width > 1024 && (
           <div className="flex items-center ">
             <Navigation className="mr-6" />
-            <Button className="bg-blue-700 text-white ">Contactar</Button>
+            <Button
+              onClick={() => router.push("/contact")}
+              className="bg-blue-700 text-white "
+            >
+              Contactar
+            </Button>
           </div>
         )}
         {width <= 1024 && <MenuIcon />}
