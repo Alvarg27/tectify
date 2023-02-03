@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import Header from "./Header";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
@@ -24,6 +23,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/tectify-icon.webp" />
       </Head>
       {children}
+      <Footer />
     </>
   );
 }
