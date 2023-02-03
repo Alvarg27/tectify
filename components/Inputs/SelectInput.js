@@ -28,7 +28,7 @@ const SelectInput = ({ input, formData, setFormData, index }) => {
         input?.width ? input.width : "w-full"
       } ${input?.className}`}
     >
-      <p>{translate(input.label)}</p>
+      <p className="dark:text-white">{translate(input.label)}</p>
       <p className="text-gray-500 text-sm mb-1">{input.description}</p>
       <div>
         <Select

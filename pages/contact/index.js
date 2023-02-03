@@ -1,4 +1,5 @@
 import Form from "components/Form/Form";
+import useWindowDimensions from "hooks/useWindowDimensions";
 import React, { useState } from "react";
 
 const companySizeOptions = [
@@ -201,16 +202,41 @@ const ContactPage = () => {
       className: "pl-1",
     },
   ]);
+
+  const { width, height } = useWindowDimensions();
   return (
-    <section>
-      <div className="mt-[70px] w-[90%] max-w-[1200px] mx-auto flex">
-        <div className="w-1/2">
-          <p className="text-2xl">Get in touch</p>
-          <p className="text-4xl font-semibold">hola@tectify.io</p>
-          <p className="text-4xl font-semibold">01 800 099 1211</p>
+    <section className="w-full" style={{ height: height }}>
+      <div className="h-full w-full fixed top-0 flex">
+        <div className="absolute  bg-indigo-400 md:w-1/3 -right-[10%] w-1/2 -top-[10%]  aspect-square md:-top-1/4 rounded-full blur-3xl opacity-20 "></div>
+        <div className="absolute  bg-blue-400 md:w-1/3 w-3/4 left-0 aspect-square md:-bottom-1/4 bottom-0 rounded-full blur-3xl opacity-20 "></div>
+      </div>
+
+      <div className="pt-[100px] pb-[100px]   w-[90%] max-w-[700px] mx-auto flex-col justify-center flex">
+        <div className="text-center w-full ">
+          <p className="text-6xl font-bold dark:text-white">
+            Talk to our Sales team
+          </p>
+          <p className="text-lg text-gray-500 mt-4">
+            We'll help you find the right plan and pricing for your business.
+            You can call us directly to{" "}
+            <b className="text-xl font-semibold dark:text-gray-300 whitespace-nowrap">
+              800 099 1211
+            </b>
+            , send us an email to{" "}
+            <b className="text-2xl font-semibold dark:text-gray-300">
+              hola@tectify.io
+            </b>{" "}
+            or fill the form below so we cant get in tocuh with you.
+          </p>
         </div>
-        <div className="w-1/2">
-          <p></p>
+
+        <div className="bg-white bg-opacity-90 dark:bg-opacity-25 dark:bg-[#0f0f0f] p-8 mt-10 mb-[50px] drop-shadow shadow-2xl dark:shadow-blue-500 rounded-xl max-w-[600px] mx-auto ">
+          <p className="text-2xl font-medium dark:text-white">
+            Tell us a bit about your company
+          </p>
+          <p className=" text-gray-500 mb-6">
+            We we will get in touch with you as soon as posible
+          </p>
           <Form
             formData={formData}
             setFormData={setFormData}
