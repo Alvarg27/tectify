@@ -217,8 +217,9 @@ const ContactPage = () => {
             Talk to our Sales team
           </p>
           <p className="text-lg text-gray-500 mt-4">
-            We'll help you find the right plan and pricing for your business.
-            You can call us directly to{" "}
+            {
+              "  We'll help you find the right plan and pricing for your business. You can call us directly to "
+            }
             <b className="text-xl font-semibold dark:text-gray-300 whitespace-nowrap">
               800 099 1211
             </b>
