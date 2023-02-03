@@ -17,6 +17,7 @@ const DescriptionCards = () => {
           listItems={[
             { label: "Aumento de productividad" },
             { label: "Reducción de costos" },
+            { label: "Cloaboración multiárea" },
           ]}
         >
           <div className="w-[250px] relative z-[2] mr-4 drop-shadow">
