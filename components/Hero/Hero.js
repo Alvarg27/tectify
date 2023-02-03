@@ -6,8 +6,8 @@ export default function Hero() {
   const { height } = useWindowDimensions();
   return (
     <section
-      style={{ height: height }}
-      className="w-full  flex flex-col relative "
+      style={{ maxHeight: height, minHeight: height }}
+      className="w-full  flex flex-col relative"
     >
       <HeroBackground />
       <div className="absolute  bg-indigo-400 md:w-1/3 -right-[10%] w-1/2 -top-[10%]  aspect-square md:-top-1/4 rounded-full blur-3xl opacity-20 "></div>
