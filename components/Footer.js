@@ -9,7 +9,7 @@ export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <div className="w-full bg-gray-100 dark:bg-neutral-900 h-[50px] flex fixed bottom-0 ">
+    <div className="w-full  shadow bg-gray-50 dark:bg-black h-[50px] flex fixed bottom-0 z-[10]">
       <div className=" flex items-center justify-between w-full max-w-[1200px] mx-auto ">
         <p className=" text-gray-500 text-sm">©{year} tectify</p>
         <div className="flex">

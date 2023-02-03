@@ -4,14 +4,7 @@ import code1 from "public/code.webp";
 import restaurants3 from "public/restaurants3.webp";
 import Image from "next/image";
 import useWindowDimensions from "hooks/useWindowDimensions";
-import {
-  RiCloudFill,
-  RiCloudyFill,
-  RiNumbersFill,
-  RiShoppingBag2Line,
-  RiShoppingBagFill,
-  RiShoppingCartFill,
-} from "react-icons/ri";
+import { RiNumbersFill, RiShoppingCartFill } from "react-icons/ri";
 import { FaCloud } from "react-icons/fa";
 
 const HeroBackground = () => {

@@ -14,7 +14,7 @@ const LanguageSelector = ({ className }) => {
   };
   return (
     <div
-      className={`flex items-center cursor-pointer bg-gray-200 dark:bg-neutral-800 dark:text-white  rounded-md pl-2 ${className}`}
+      className={`flex items-center cursor-pointer bg-gray-200 dark:bg-neutral-900 dark:text-white  rounded-md pl-2 ${className}`}
     >
       <TbWorld />
       <select

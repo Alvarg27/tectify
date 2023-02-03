@@ -7,12 +7,12 @@ export default function Hero() {
   return (
     <section
       style={{ height: height }}
-      className="w-full  flex flex-col overflow-hidden relative "
+      className="w-full  flex flex-col relative "
     >
       <HeroBackground />
-      <div className="absolute  bg-indigo-400 w-1/3 right-0 aspect-square -top-1/4 rounded-full blur-3xl opacity-20 "></div>
-      <div className="absolute  bg-blue-400 w-1/3 left-0 aspect-square -bottom-1/4 rounded-full blur-3xl opacity-20 "></div>
-      <div className="m-auto lg:max-w-[700px] md:max-w-[600px] relative">
+      <div className="absolute  bg-indigo-400 md:w-1/3 right-0 w-1/2  aspect-square md:-top-1/4 rounded-full blur-3xl opacity-20 "></div>
+      <div className="absolute  bg-blue-400 md:w-1/3 w-3/4 left-0 aspect-square md:-bottom-1/4 bottom-0 rounded-full blur-3xl opacity-20 "></div>
+      <div className="m-auto lg:max-w-[700px] md:max-w-[380px] relative">
         <h2 className="bg-clip-text text-transparent text-5xl font-bold m-auto text-center py-2  bg-gradient-to-tl from-[#a6c0fe] to-[#f68084] lg:text-[70px]">
           Soluciones tecnológicas para el futuro
         </h2>

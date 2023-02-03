@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Footer from "./Footer";
+import Header from "./header/Header";
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="w-full relative">
       <Head>
         <title>tectify</title>
         <meta
@@ -22,8 +23,10 @@ export default function Layout({ children }) {
         ></meta>
         <link rel="icon" href="/tectify-icon.webp" />
       </Head>
+      <Header />
       {children}
+      <div className="h-[50px] "></div>
       <Footer />
-    </>
+    </div>
   );
 }

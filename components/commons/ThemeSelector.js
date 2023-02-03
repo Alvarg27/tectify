@@ -34,7 +34,7 @@ const ThemeSelector = ({ className }) => {
           router.reload(window.location.pathname);
         }
       }}
-      className={`flex items-center ml-4 bg-gray-200  rounded-md h-[30px] px-2 dark:bg-neutral-800 dark:text-white ${className}`}
+      className={`flex items-center ml-4 bg-gray-200  rounded-md h-[30px] px-2 dark:bg-neutral-900 dark:text-white ${className}`}
     >
       {theme === "dark" ? <RiMoonClearLine /> : <RiSunLine />}
       <p className="ml-2 text-sm hover:underline">
