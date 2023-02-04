@@ -17,13 +17,6 @@ const DescriptionCard = ({ className, large, children, label, listItems }) => {
         {children}
       </div>
       <div>
-        <div className="w-full h-full  absolute top-0 left-0 flex items-center justify-center">
-          <div
-            className={`w-1/2 aspect-square rounded-full blur-3xl opacity-30 ${
-              large ? " bg-blue-500" : " bg-indigo-500"
-            }`}
-          ></div>
-        </div>
         <p
           className={` font-medium text-center dark:text-white ${
             large ? "text-3xl" : "text-xl"

@@ -206,10 +206,7 @@ const ContactPage = () => {
   const { width, height } = useWindowDimensions();
   return (
     <section className="w-full" style={{ height: height }}>
-      <div className="h-full w-full fixed top-0 flex">
-        <div className="absolute  bg-indigo-400 md:w-1/3 -right-[10%] w-1/2 -top-[10%]  aspect-square md:-top-1/4 rounded-full blur-3xl opacity-20 "></div>
-        <div className="absolute  bg-blue-400 md:w-1/3 w-3/4 left-0 aspect-square md:-bottom-1/4 bottom-0 rounded-full blur-3xl opacity-20 "></div>
-      </div>
+      <div className="h-full w-full fixed top-0 flex"></div>
 
       <div className="pt-[100px] pb-[100px]   w-[90%] max-w-[700px] mx-auto flex-col justify-center flex">
         <div className="text-center w-full ">
