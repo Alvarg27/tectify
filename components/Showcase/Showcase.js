@@ -49,7 +49,11 @@ const Showcase = () => {
             title="The Power of People"
             url="https://thepowerofpeople.co/"
           />
-          <ShowcaseCard image={item6} title="Ave" url="https://tropica.mx" />
+          <ShowcaseCard
+            image="https://cdn.tectify.io/tectify-web/showcase/ave-showcase"
+            title="Ave"
+            url="https://ave.tectify.app"
+          />
           <ShowcaseCard
             image={item5}
             title="Grupo Farma"
