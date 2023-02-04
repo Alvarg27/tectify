@@ -6,7 +6,10 @@ export default function Hero() {
   const { height } = useWindowDimensions();
   return (
     <section
-      style={{ maxHeight: height, minHeight: height }}
+      style={{
+        maxHeight: document.documentElement.clientHeight,
+        minHeight: document.documentElement.clientHeight,
+      }}
       className="w-full  flex flex-col relative"
     >
       <HeroBackground />

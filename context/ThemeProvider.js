@@ -33,11 +33,10 @@ export const ThemeProvider = ({ children }) => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
       document.body.style.backgroundColor = "black";
-      document.body.style.backgroundColor = "black";
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      document.body.style.backgroundColor = "white";
+      document.body.style.backgroundColor = "#f9fafb";
       localStorage.setItem("theme", "light");
     }
   }, [theme]);
