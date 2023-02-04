@@ -4,7 +4,7 @@ import React from "react";
 
 const ShowcaseCard = ({ image, containerRef, large }) => {
   return (
-    <div className="relative drop-shadow-xl px-1">
+    <div className="relative drop-shadow-xl md:px-2 md:py-1 py-4">
       <Image
         src={image}
         height={600}

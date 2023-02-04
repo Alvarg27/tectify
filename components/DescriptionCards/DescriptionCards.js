@@ -8,8 +8,8 @@ import Image from "next/image";
 import whatsapp from "public/whatsapp.webp";
 const DescriptionCards = () => {
   return (
-    <div className="max-w-[1000px] w-full m-auto relative  py-10 md:h-[600px]">
-      <div className="w-full px-4">
+    <div className="max-w-[1000px] w-[90%] m-auto relative  py-10 md:h-[600px]">
+      <div className="w-full">
         <DescriptionCard
           large
           className="md:!absolute  top-0 left-1/2 -translate-x-1/2 z-[1] md:!w-[40%] h-[450px]  px-8 pt-24"

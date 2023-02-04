@@ -13,26 +13,27 @@ import item9 from "public/sirilo-showcase.webp";
 const Showcase = () => {
   const containerRef = useRef(null);
   return (
-    <section className="max-w-[1200px] mx-auto relative my-10">
-      <div ref={containerRef} className="flex relative w-full ">
-        <div className="w-2/3">
+    <section className="max-w-[1200px] mx-auto relative my-10 w-[90%]">
+      <div
+        ref={containerRef}
+        className="flex flex-col md:flex-row relative w-full "
+      >
+        <div className="md:w-2/3">
           <ShowcaseCard image={item1} />
-        </div>
-        <div className="w-1/3">
-          <ShowcaseCard image={item2} />
-          <ShowcaseCard image={item3} />
-        </div>
-      </div>
-      <div ref={containerRef} className="flex relative w-full ">
-        <div className="w-2/3">
           <ShowcaseCard image={item4} />
         </div>
-        <div className="w-1/3">
+        <div className="md:w-1/3">
+          <ShowcaseCard image={item2} />
+          <ShowcaseCard image={item3} />
           <ShowcaseCard image={item6} />
           <ShowcaseCard image={item5} />
         </div>
       </div>
-      <div ref={containerRef} className="flex relative w-full ">
+
+      <div
+        ref={containerRef}
+        className="flex flex-col md:flex-row relative w-full "
+      >
         <ShowcaseCard image={item7} />
         <ShowcaseCard image={item8} />
         <ShowcaseCard image={item9} />
