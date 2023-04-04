@@ -1,15 +1,5 @@
 import React, { useRef, useState } from "react";
 import ShowcaseCard from "./ShowcaseCard";
-import item1 from "public/tropica-showcase.webp";
-import item2 from "public/cultura-showcase.webp";
-import item3 from "public/powerofpeople-showcase.webp";
-import item4 from "public/turismo-showcase-3.webp";
-import item5 from "public/farma-showcase.webp";
-import item6 from "public/ave-showcase.webp";
-import item7 from "public/luca-showcase.webp";
-import item8 from "public/casantonella-showcase.webp";
-import item9 from "public/sirilo-showcase.webp";
-
 const Showcase = () => {
   const containerRef = useRef(null);
   return (
